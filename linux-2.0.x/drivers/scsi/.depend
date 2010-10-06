@@ -1,0 +1,1518 @@
+53c7,8xx.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c7xx/sync.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c7xx/disconnect.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/time.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   53c7,8xx.h \
+   constants.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stddef.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c7xx/fast.h) \
+   53c8xx_d.h \
+   53c8xx_u.h \
+   scsi_module.c
+53c7,8xx.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h
+	@touch 53c7,8xx.h
+AM53C974.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   scsi.h \
+   hosts.h \
+   AM53C974.h \
+   constants.h \
+   sd.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h) \
+   scsi_module.c
+AM53C974.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h
+	@touch AM53C974.h
+BusLogic.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blkdev.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   BusLogic.h \
+   FlashPoint.c \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/omit/flashpoint.h) \
+   scsi_module.c
+BusLogic.h:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/omit/flashpoint.h)
+	@touch BusLogic.h
+FlashPoint.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/omit/flashpoint.h)
+NCR5380.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h
+NCR53c406a.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/bitops.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   NCR53c406a.h \
+   scsi_module.c
+a2091.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/page.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/pgtable.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   scsi.h \
+   hosts.h \
+   wd33c93.h \
+   a2091.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h
+a2091.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h
+	@touch a2091.h
+a3000.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/page.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/pgtable.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   scsi.h \
+   hosts.h \
+   wd33c93.h \
+   a3000.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h
+a3000.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h
+	@touch a3000.h
+advansys.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   advansys.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   scsi_module.c
+advansys.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h
+	@touch advansys.h
+aha152x.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   sd.h \
+   hosts.h \
+   constants.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/wait.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   aha152x.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h \
+   scsi_module.c
+aha152x.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h
+	@touch aha152x.h
+aha1542.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   aha1542.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   sd.h \
+   scsi_module.c
+aha1542.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h
+	@touch aha1542.h
+aha1740.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   aha1740.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   scsi_module.c
+aha1740.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h
+	@touch aha1740.h
+aic7xxx.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/byteorder.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/tqueue.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/tasks.h \
+   sd.h \
+   scsi.h \
+   hosts.h \
+   aic7xxx.h \
+   aic7xxx/sequencer.h \
+   aic7xxx/scsi_message.h \
+   aic7xxx_reg.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/smp.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/aic7xxx/cmds/per/device.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/aic7xxx/reset/delay.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/aic7xxx/proc/stats.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/aic7xxx/tcq/on/by/default.h) \
+   aic7xxx_seq.c \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h) \
+   aic7xxx_proc.c \
+   scsi_module.c
+aic7xxx.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h
+	@touch aic7xxx.h
+aic7xxx_proc.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/aic7xxx/tcq/on/by/default.h)
+atari_NCR5380.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/tqueue.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/atari/scsi/toshiba/delay.h)
+atari_scsi.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stddef.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ctype.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/page.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/pgtable.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/traps.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/bitops.h \
+   scsi.h \
+   hosts.h \
+   atari_scsi.h \
+   NCR5380.h \
+   constants.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/atari/scsi/toshiba/delay.h) \
+   atari_NCR5380.c \
+   scsi_module.c
+atp870u.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   atp870u.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   sd.h \
+   scsi_module.c
+atp870u.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h
+	@touch atp870u.h
+constants.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   scsi.h \
+   hosts.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/constants.h)
+dc390.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h
+	@touch dc390.h
+dtc.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   scsi.h \
+   hosts.h \
+   dtc.h \
+   NCR5380.h \
+   constants.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   NCR5380.c \
+   scsi_module.c
+eata.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/byteorder.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   eata.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/eata/tagged/queue.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/eata/linked/commands.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/eata/max/tags.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h) \
+   scsi_module.c
+eata.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h
+	@touch eata.h
+eata_dma.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/byteorder.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/pgtable.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   sd.h \
+   hosts.h \
+   eata_dma.h \
+   eata_dma_proc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   eata_dma_proc.c \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h) \
+   scsi_module.c
+eata_dma.h: \
+   eata_generic.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h
+	@touch eata_dma.h
+eata_pio.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   eata_pio.h \
+   eata_dma_proc.h \
+   scsi.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   eata_pio_proc.c \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h) \
+   scsi_module.c
+eata_pio.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h \
+   eata_generic.h
+	@touch eata_pio.h
+esp.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   scsi.h \
+   hosts.h \
+   esp.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/ptrace.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/pgtable.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h
+esp.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h
+	@touch esp.h
+fdomain.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   fdomain.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h) \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi_ioctl.h \
+   scsi_module.c
+g_NCR5380.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/generic/ncr53c400.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/g/ncr5380/port.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/g/ncr5380/mem.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   g_NCR5380.h \
+   NCR5380.h \
+   constants.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   NCR5380.c \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   scsi_module.c
+g_NCR5380.h:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/g/ncr5380/port.h)
+	@touch g_NCR5380.h
+gdth.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/time.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   gdth.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   gdth_proc.h \
+   gdth_proc.c \
+   scsi_module.c
+gdth.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h
+	@touch gdth.h
+gdth_proc.o: \
+   gdth_ioctl.h
+gvp11.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/page.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/pgtable.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   scsi.h \
+   hosts.h \
+   wd33c93.h \
+   gvp11.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h
+gvp11.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h
+	@touch gvp11.h
+hosts.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   scsi.h \
+   hosts.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/a3000/scsi.h) \
+   a3000.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/a2091/scsi.h) \
+   a2091.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/gvp11/scsi.h) \
+   gvp11.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/atari/scsi.h) \
+   atari_scsi.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/advansys.h) \
+   advansys.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/aha152x.h) \
+   aha152x.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/aha1542.h) \
+   aha1542.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/aha1740.h) \
+   aha1740.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/aic7xxx.h) \
+   aic7xxx.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/buslogic.h) \
+   BusLogic.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/eata/dma.h) \
+   eata_dma.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/eata/pio.h) \
+   eata_pio.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/u14/34f.h) \
+   u14-34f.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/future/domain.h) \
+   fdomain.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/generic/ncr5380.h) \
+   g_NCR5380.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/in2000.h) \
+   in2000.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/pas16.h) \
+   pas16.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/qlogic/fas.h) \
+   qlogicfas.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/qlogic/isp.h) \
+   qlogicisp.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/seagate.h) \
+   seagate.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/t128.h) \
+   t128.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/dtc3280.h) \
+   dtc.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c7xx.h) \
+   53c7,8xx.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx.h) \
+   ncr53c8xx.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ultrastor.h) \
+   ultrastor.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/7000fasst.h) \
+   wd7000.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/eata.h) \
+   eata.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c406a.h) \
+   NCR53c406a.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/sym53c416.h) \
+   sym53c416.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/dc390t.h) \
+   dc390.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/am53c974.h) \
+   AM53C974.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/megaraid.h) \
+   megaraid.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ppa.h) \
+   ppa.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/acard.h) \
+   atp870u.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/sunesp.h) \
+   esp.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/blk/dev/idescsi.h) \
+   ide-scsi.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/gdth.h) \
+   gdth.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/initio.h) \
+   ini9100u.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/tc2550.h) \
+   tripace.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/inia100.h) \
+   inia100.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/pci2000.h) \
+   pci2000.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/pci2220i.h) \
+   pci2220i.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/psi240i.h) \
+   psi240i.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/debug.h) \
+   scsi_debug.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/amiga.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/atari.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/blk/dev/sd.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/blk/dev/sr.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/chr/dev/st.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/chr/dev/sg.h)
+hosts.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h
+	@touch hosts.h
+i60uscsi.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   i60uscsi.h
+i60uscsi.h:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/adr.h)
+	@touch i60uscsi.h
+i91uscsi.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   i91uscsi.h
+i91uscsi.h:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/adr.h)
+	@touch i91uscsi.h
+ide-scsi.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blkdev.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/hdreg.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/bitops.h \
+   ../block/ide.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   ide-scsi.h
+in2000.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blkdev.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   scsi.h \
+   sd.h \
+   hosts.h \
+   in2000.h \
+   scsi_module.c
+in2000.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h
+	@touch in2000.h
+ini9100u.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   sd.h \
+   scsi.h \
+   hosts.h \
+   ini9100u.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   scsi.h \
+   sd.h \
+   hosts.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   ini9100u.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   scsi_module.c
+ini9100u.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   sd.h
+	@touch ini9100u.h
+inia100.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   sd.h \
+   scsi.h \
+   hosts.h \
+   inia100.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   scsi.h \
+   sd.h \
+   hosts.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   inia100.h \
+   scsi_module.c
+inia100.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   sd.h
+	@touch inia100.h
+megaraid.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/wait.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/tqueue.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   sd.h \
+   scsi.h \
+   hosts.h \
+   megaraid.h \
+   scsi_module.c
+megaraid.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h
+	@touch megaraid.h
+ncr53c8xx.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/time.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   ncr53c8xx.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   scsi_module.c
+ncr53c8xx.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/nvram/detect.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/profile.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/max/tags.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/default/tags.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/tagged/queue.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/iomapped.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/sync.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/no/disconnect.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/force/sync/nego.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/disable/mparity/check.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/disable/parity/check.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ncr53c8xx/symbios/compat.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h
+	@touch ncr53c8xx.h
+pas16.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   pas16.h \
+   NCR5380.h \
+   constants.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   NCR5380.c \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   scsi_module.c
+pci2000.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   pci2000.h \
+   psi_roy.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h
+pci2000.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h
+	@touch pci2000.h
+pci2220i.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   scsi.h \
+   hosts.h \
+   pci2220i.h
+pci2220i.h: \
+   psi_dale.h
+	@touch pci2220i.h
+ppa.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   sd.h \
+   hosts.h \
+   ppa.h \
+   scsi_module.c \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ppa/have/pedantic.h)
+ppa.h:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/ppa/have/pedantic.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stddef.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/tqueue.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   sd.h \
+   hosts.h
+	@touch ppa.h
+psi240i.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   psi240i.h \
+   psi_chip.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   sd.h \
+   scsi_module.c
+psi240i.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h
+	@touch psi240i.h
+qlogicfas.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/unistd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   sd.h \
+   hosts.h \
+   qlogicfas.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   scsi_module.c
+qlogicisp.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/unistd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   sd.h \
+   hosts.h \
+   qlogicisp.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   qlogicisp_asm.c \
+   scsi_module.c
+scsi.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/kerneld.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kerneld.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/modules.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/multi/lun.h)
+scsi.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/random.h \
+   hosts.h
+	@touch scsi.h
+scsi_debug.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/genhd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   scsi_debug.h \
+   scsi_module.c
+scsi_debug.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h
+	@touch scsi_debug.h
+scsi_ioctl.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/page.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi_ioctl.h
+scsi_module.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h
+scsi_proc.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h
+scsi_syms.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/modules.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   scsi.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi_ioctl.h \
+   hosts.h \
+   constants.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_begin.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_end.h
+scsicam.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/genhd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/unaligned.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h
+sd.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi_ioctl.h \
+   constants.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/genhd.h
+sd.h: \
+   scsi.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/genhd.h
+	@touch sd.h
+sd_ioctl.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/hdreg.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi_ioctl.h \
+   hosts.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h
+seagate.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   seagate.h \
+   constants.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/seagate.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/seagate/module.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi_ioctl.h \
+   scsi_module.c
+seagate.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h
+	@touch seagate.h
+sg.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mtio.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioctl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi_ioctl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/sg.h
+sr.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/cdrom.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   sr.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi_ioctl.h \
+   constants.h
+sr.h: \
+   scsi.h
+	@touch sr.h
+sr_ioctl.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   sr.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi_ioctl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/cdrom.h
+st.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mtio.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioctl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsi_ioctl.h \
+   st.h \
+   constants.h \
+   st_options.h
+st.h: \
+   scsi.h
+	@touch st.h
+sym53c416.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   sym53c416.h \
+   scsi_module.c
+sym53c416.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h
+	@touch sym53c416.h
+t128.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   t128.h \
+   NCR5380.h \
+   constants.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   NCR5380.c \
+   scsi_module.c
+tmscsim.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ctype.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   constants.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   dc390.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/smp.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   tmscsim.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/dc390t/nogensupp.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/multi/lun.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/dc390t/tradmap.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/unaligned.h \
+   scsiiom.c \
+   scsi_module.c
+tmscsim.h:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/smp.h)
+	@touch tmscsim.h
+tripace.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   tripace.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/bios32.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pci.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   tripace_mcode.h \
+   sd.h
+u14-34f.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/byteorder.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   u14-34f.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/u14/34f/linked/commands.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/scsi/u14/34f/max/tags.h) \
+   scsi_module.c
+u14-34f.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h
+	@touch u14-34f.h
+ultrastor.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stddef.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/bitops.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   ultrastor.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   scsi_module.c
+ultrastor.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h
+	@touch ultrastor.h
+wd33c93.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/delay.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   scsi.h \
+   hosts.h \
+   wd33c93.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   scsi_module.c
+wd7000.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/blk.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   scsi.h \
+   hosts.h \
+   sd.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/scsi/scsicam.h \
+   wd7000.h \
+   scsi_module.c
+wd7000.h: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kdev_t.h
+	@touch wd7000.h
+.PRECIOUS:	53c7,8xx.h \
+	AM53C974.h \
+	BusLogic.h \
+	a2091.h \
+	a3000.h \
+	advansys.h \
+	aha152x.h \
+	aha1542.h \
+	aha1740.h \
+	aic7xxx.h \
+	atp870u.h \
+	dc390.h \
+	eata.h \
+	eata_dma.h \
+	eata_pio.h \
+	esp.h \
+	g_NCR5380.h \
+	gdth.h \
+	gvp11.h \
+	hosts.h \
+	i60uscsi.h \
+	i91uscsi.h \
+	in2000.h \
+	ini9100u.h \
+	inia100.h \
+	megaraid.h \
+	ncr53c8xx.h \
+	pci2000.h \
+	pci2220i.h \
+	ppa.h \
+	psi240i.h \
+	scsi.h \
+	scsi_debug.h \
+	sd.h \
+	seagate.h \
+	sr.h \
+	st.h \
+	sym53c416.h \
+	tmscsim.h \
+	u14-34f.h \
+	ultrastor.h \
+	wd7000.h \
+

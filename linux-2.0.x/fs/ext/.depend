@@ -1,0 +1,70 @@
+dir.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ext_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h
+file.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ext_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/locks.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/pagemap.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ext_fs.h
+freelists.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ext_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/locks.h
+fsync.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/locks.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ext_fs.h
+inode.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ext_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/locks.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h
+namei.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ext_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h
+symlink.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ext_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h
+truncate.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ext_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h

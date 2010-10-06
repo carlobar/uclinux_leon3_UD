@@ -1,0 +1,35 @@
+af_ipx.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ipx.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/route.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/termios.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/p8022.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/p8022tr.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/psnap.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ipx/intern.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/firewall.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h)
+sysctl_net_ipx.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sysctl.h

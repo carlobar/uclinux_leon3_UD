@@ -1,0 +1,23 @@
+#!/bin/sh
+
+echo "###Start..."
+
+hostname leon2
+mount -t proc proc /proc
+
+#mount -n -t devpts devpts /dev/pts
+
+/sbin/ifconfig lo up 127.0.0.1 netmask 255.0.0.0
+/sbin/ifconfig eth0 up 192.168.0.80
+
+route add 127.0.0.1 dev lo
+route add default dev eth0
+
+#route add default gw 192.168.0.1 dev eth0
+
+/bin/portmap -d &
+mount -o nolock -o ro -t nfs 192.168.0.15:/home /home/nfs
+
+#mount 192.168.0.6:/mnt /home/nfs
+
+/bin/sh

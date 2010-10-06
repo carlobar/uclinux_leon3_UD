@@ -1,0 +1,27 @@
+#!/bin/sh
+
+echo "Converting "$1" to flat file systems"
+
+for i in `find $1` 
+do
+	if [ -f "$i" -a ! -h "$i" ] 
+	then
+		sparc-linux-objdump -h $i 2>&1 | grep -q .text
+		if [ $? -eq 0 ] 
+		    then
+		        echo "Note: You have to link the exeutable with a pic-less libgcc. Use the -mpic-none switch in the patched gcc"
+			echo "Converting "$i" executable"
+			sparc-linux-ld -r -d -o sh.elf2flt $i
+			sparc-linux-ld -T elf2flt.ld -Ur -o sh.elf sh.elf2flt 
+			sparc-linux-ld -T elf2flt.ld -o sh.gdb sh.elf2flt     
+			sparc-linux-objdump -d sh.gdb >sh.dis
+			elf2flt -o $i -r sh.elf
+			chmod a+rwx $i
+		fi
+	fi
+done
+
+
+
+
+

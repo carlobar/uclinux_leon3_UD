@@ -1,0 +1,7 @@
+-rw-r--r--  1 harald 102 23071 Nov 15 13:42 ./can_82c200funcs.c
+-rw-r--r--  1 harald 102 5347 Nov 16 16:46 ./can_write.c
+-rw-r--r--  1 harald 102 23012 Sep 14  2001 ./can_82c200funcs.c~
+-rw-r--r--  1 harald 102 23961 Nov 16 15:51 ./can_sja1000funcs.c
+-rw-r--r--  1 harald 102 5238 Nov 15 10:04 ./can_write.c~
+-rw-r--r--  1 harald 102 23796 Nov 16 12:37 ./can_sja1000funcs.c~
+-rw-r--r--  1 harald 102 23972 Nov 16 16:21 ./#can_sja1000funcs.c#

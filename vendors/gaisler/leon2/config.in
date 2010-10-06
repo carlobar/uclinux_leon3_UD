@@ -1,0 +1,8 @@
+
+mainmenu_name 'Gaisler/Leon2/3 options'
+mainmenu_option next_comment
+comment 'Gaisler/Leon2/3 options'
+
+source vendors/gaisler/common/config.in
+
+endmenu

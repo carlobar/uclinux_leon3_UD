@@ -1,0 +1,203 @@
+af_netrom.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom/module.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_arp.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/termios.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/notifier.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netrom.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_arp.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/inet.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h)
+nr_dev.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom/module.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_ether.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/etherdevice.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_arp.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netrom.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/inet.h)
+nr_in.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom/module.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netrom.h
+nr_loopback.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom/module.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netrom.h
+nr_out.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom/module.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netrom.h
+nr_route.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom/module.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_arp.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/termios.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/notifier.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netrom.h \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/firewall.h)
+nr_subr.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom/module.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netrom.h
+nr_timer.o:  \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom.h) \
+   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom/module.h) \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netrom.h
+sysctl_net_netrom.o: \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sysctl.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
+   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netrom.h

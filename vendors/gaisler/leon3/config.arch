@@ -1,0 +1,17 @@
+.EXPORT_ALL_VARIABLES:
+############################################################################
+
+#
+# Vendor specific settings
+#
+
+KERNEL_EXTRA_CFLAGS = 
+VENDOR_CFLAGS = -D__linux_2_0_x
+BOOTFLAGS = 
+
+############################################################################
+
+DISABLE_SHARED_LIBS = 1
+include $(ROOTDIR)/vendors/config/sparcnommu/config.arch
+
+############################################################################

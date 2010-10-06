@@ -1,0 +1,319 @@
+#
+# For a description of the syntax of this configuration file,
+# see the Configure script.
+#
+mainmenu_name 'uClinux/Sparc (w/o MMU) Kernel Configuration'
+
+define_bool CONFIG_UCLINUX y
+
+#------------------------------------------------------------------------------
+# Code maturity level options
+#------------------------------------------------------------------------------
+
+mainmenu_option next_comment
+comment 'Code maturity level options'
+bool 'Prompt for development and/or incomplete code/drivers' CONFIG_EXPERIMENTAL
+endmenu
+
+#------------------------------------------------------------------------------
+# Loadable module support
+#------------------------------------------------------------------------------
+
+mainmenu_option next_comment
+comment 'Loadable module support'
+bool 'Enable loadable module support' CONFIG_MODULES
+if [ "$CONFIG_MODULES" = "y" ]; then
+  bool 'Set version information on all symbols for modules' CONFIG_MODVERSIONS
+  bool 'Kernel daemon support (e.g. autoload of modules)' CONFIG_KERNELD
+fi
+endmenu
+
+#------------------------------------------------------------------------------
+# Platform dependant setup
+#------------------------------------------------------------------------------
+
+mainmenu_option next_comment
+comment 'Platform dependant setup'
+
+choice 'CPU' \
+  "LEON-2.x	CONFIG_LEON_2\
+   LEON-3.x	CONFIG_LEON_3" LEON-3.x
+
+comment 'Platform'
+
+if [ "$CONFIG_LEON_2" = "y" -o "$CONFIG_LEON_3" = "y" ]; then
+  bool 'LEON over TSIM - the remote SPARC simulator' CONFIG_LEON4TSIM
+fi
+
+choice 'Kernel executes from' \
+  "RAM	CONFIG_RAMKERNEL \
+   ROM	CONFIG_ROMKERNEL" ROM
+
+endmenu
+
+#------------------------------------------------------------------------------
+# General setup
+#------------------------------------------------------------------------------
+
+mainmenu_option next_comment
+comment 'General setup'
+
+bool 'PCI bios support' CONFIG_PCI
+if [ "$CONFIG_PCI" = "y" ]; then
+  bool '    PCI device list support' CONFIG_PCIDEVLIST
+fi
+
+bool 'Use linux memcpy|memmove|bcopy et al' CONFIG_USE_ARCHMEMCPY
+
+bool 'Networking support' CONFIG_NET
+bool 'System V IPC' CONFIG_SYSVIPC
+bool 'Reduced memory footprint' CONFIG_REDUCED_MEMORY
+tristate 'Kernel support for flat binaries' CONFIG_BINFMT_FLAT
+if [ "$CONFIG_BINFMT_FLAT" != "n" ]; then
+  bool '    Enable ZFLAT support' CONFIG_BINFMT_ZFLAT
+fi
+
+#tristate 'Kernel support for a.out binaries' CONFIG_BINFMT_AOUT
+#tristate 'Kernel support for ELF binaries' CONFIG_BINFMT_ELF
+#bool 'Compile kernel as ELF - if your GCC is ELF-GCC' CONFIG_KERNEL_ELF
+
+#if [ "$CONFIG_GRLIB_GAISLER_VGA" = "y" ]; then
+  bool 'Console support' CONFIG_CONSOLE
+  if [ "$CONFIG_CONSOLE" = "y" ]; then
+    bool 'Frame buffer' CONFIG_FRAMEBUFFER
+  fi
+#fi
+
+if [ "$CONFIG_LEON_2" = "y" -o "$CONFIG_LEON_3" = "y" ]; then
+	bool 'Set Kernel Command Line' CONFIG_SPARCNOMMU_SET_DEF_KERNCMD
+	if [ "$CONFIG_SPARCNOMMU_SET_DEF_KERNCMD" = "y" ]; then
+		string 'Default Kernel Command Line' CONFIG_SPARCNOMMU_DEF_KERNCMD 'CONSOLE=/dev/ttyS0'
+	fi
+fi
+
+endmenu
+
+#------------------------------------------------------------------------------
+# Block device driver configuration
+#------------------------------------------------------------------------------
+
+mainmenu_option next_comment
+comment 'Floppy, IDE, and other block devices'
+
+tristate 'ROM disk memory block device' CONFIG_BLK_DEV_BLKMEM
+# tristate 'Normal floppy disk support' CONFIG_BLK_DEV_FD
+bool 'IDE harddisk support' CONFIG_BLK_DEV_IDE
+if [ "$CONFIG_BLK_DEV_IDE" = "y" ]; then
+  bool '   Include IDE/ATAPI CDROM support' CONFIG_BLK_DEV_IDECD
+  bool '   Include IDE/ATAPI TAPE support' CONFIG_BLK_DEV_IDETAPE
+  bool '   Include IDE/ATAPI FLOPPY support (new)' CONFIG_BLK_DEV_IDEFLOPPY
+fi
+
+comment 'Additional Block/FLASH Devices'
+
+tristate 'Loopback device support' CONFIG_BLK_DEV_LOOP
+bool 'Multiple devices driver support' CONFIG_BLK_DEV_MD
+if [ "$CONFIG_BLK_DEV_MD" = "y" ]; then
+  tristate '   Linear (append) mode' CONFIG_MD_LINEAR
+  tristate '   RAID-0 (striping) mode' CONFIG_MD_STRIPED
+fi
+tristate 'RAM disk support' CONFIG_BLK_DEV_RAM
+if [ "$CONFIG_BLK_DEV_RAM" = "y" ]; then
+  bool '   Release empty RAM disk blocks' CONFIG_RD_RELEASE_BLOCKS
+#  bool '   Initial RAM disk (initrd) support' CONFIG_BLK_DEV_INITRD
+fi
+tristate 'FLASH device support' CONFIG_DEV_FLASH
+if [ "$CONFIG_DEV_FLASH" = "y" ]; then
+  bool '   FLASH Block device' CONFIG_BLK_DEV_FLASH
+  bool '   FLASH Character device' CONFIG_CHR_DEV_FLASH
+fi
+tristate 'NFA NAND-FLASH device support' CONFIG_BLK_DEV_NFA
+endmenu
+
+#------------------------------------------------------------------------------
+# Amba device driver configuration
+#------------------------------------------------------------------------------
+
+if [ "$CONFIG_LEON_3" = "y" ]; then
+
+mainmenu_option next_comment
+comment 'Leon3 Amba configuration'
+
+  mainmenu_option next_comment
+   comment 'Vendor Gaisler'
+   
+    bool 'APBUart support' CONFIG_GRLIB_GAISLER_APBUART
+    if [ "$CONFIG_GRLIB_GAISLER_APBUART" = "y" ]; then
+      bool 'APBUart fixed speed' CONFIG_GRLIB_GAISLER_APBUART_FIXED
+    fi
+    
+    if [ "$CONFIG_CONSOLE" = "y" ]; then
+      bool 'VGA support' CONFIG_GRLIB_GAISLER_VGA
+      if [ "$CONFIG_GRLIB_GAISLER_VGA" = "y" ]; then
+        hex 'Base address of Videomem' CONFIG_GRLIB_GAISLER_VGAMEM_BASE c0000000
+      fi
+    fi
+
+    bool 'GRETH Ethernet support' CONFIG_GRLIB_GAISLER_GRETH
+	if [ "$CONFIG_GRLIB_GAISLER_GRETH" = "y" ]; then
+	     hex 'MAC-Address, byte 0' CONFIG_GRLIB_GAISLER_MACADDR0 DE
+	     hex 'MAC-Address, byte 1' CONFIG_GRLIB_GAISLER_MACADDR1 AD
+	     hex 'MAC-Address, byte 2' CONFIG_GRLIB_GAISLER_MACADDR2 BE
+	     hex 'MAC-Address, byte 3' CONFIG_GRLIB_GAISLER_MACADDR3 EF
+	     hex 'MAC-Address, byte 4' CONFIG_GRLIB_GAISLER_MACADDR4 08
+	     hex 'MAC-Address, byte 5' CONFIG_GRLIB_GAISLER_MACADDR5 16
+	fi
+    
+    mainmenu_option next_comment
+     comment 'PS/2 drivers'
+      bool 'PS/2 support' CONFIG_GRLIB_GAISLER_PS2
+      if [ "$CONFIG_GRLIB_GAISLER_PS2" = "y" ]; then
+        bool 'PS/2 keyboard' CONFIG_GRLIB_GAISLER_PS2_KEYBOARD
+      fi
+    endmenu
+    
+  endmenu
+  
+  mainmenu_option next_comment
+   comment 'Vendor Opencores'
+    bool 'Ethernet support' CONFIG_GRLIB_OPENCORES_ETHERNET
+    if [ "$CONFIG_GRLIB_OPENCORES_ETHERNET" = "y" ]; then
+      hex 'IRQ of Open-Eth' CONFIG_GRLIB_OPENCORES_IRQ_ETH_0 0C
+      hex 'Base address of Open-Eth' CONFIG_GRLIB_OPENCORES_ETH_BASE_ADD B0000000
+      hex 'MAC-Address of Open-Eth, byte 0' CONFIG_GRLIB_OPENCORES_MACADDR0 DE
+      hex 'MAC-Address of Open-Eth, byte 1' CONFIG_GRLIB_OPENCORES_MACADDR1 AD
+      hex 'MAC-Address of Open-Eth, byte 2' CONFIG_GRLIB_OPENCORES_MACADDR2 BE
+      hex 'MAC-Address of Open-Eth, byte 3' CONFIG_GRLIB_OPENCORES_MACADDR3 EF
+      hex 'MAC-Address of Open-Eth, byte 4' CONFIG_GRLIB_OPENCORES_MACADDR4 08
+      hex 'MAC-Address of Open-Eth, byte 5' CONFIG_GRLIB_OPENCORES_MACADDR5 15
+      bool 'Set MII to 100mb' CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB
+    fi
+
+  endmenu
+endmenu
+fi
+
+mainmenu_option next_comment
+comment 'Controller Area Network Cards/Chips'
+tristate 'can4linux Support'	CONFIG_CAN4LINUX
+#if [ "$CONFIG_CAN4LINUX" != "n" ]; then
+#   tristate '  AT-CAN-MINI ISA' CONFIG_CAN_ATCANMINI
+#   tristate '  CntrlLink PC104' CONFIG_CAN_CCPC104
+#   tristate '  ColdFire Flex CAN' CONFIG_CAN_MCF5282
+#   tristate '  CPC-PCI' CONFIG_CAN_CPC_PCI
+#   tristate '  I+ME Slimline ISA' CONFIG_CAN_IME_SLIMLINE
+#fi
+endmenu
+
+#------------------------------------------------------------------------------
+# Network device support & configuration
+#------------------------------------------------------------------------------
+
+if [ "$CONFIG_NET" = "y" ]; then
+  source net/Config.in
+fi
+
+if [ "$CONFIG_NET" = "y" ]; then
+
+  mainmenu_option next_comment
+  comment 'Network device support'
+
+  bool 'Network device support' CONFIG_NETDEVICES
+  if [ "$CONFIG_NETDEVICES" = "y" ]; then
+    #
+    # Network device configuration
+    #
+    tristate 'Dummy net driver support' CONFIG_DUMMY
+    tristate 'SLIP (serial line) support' CONFIG_SLIP
+    if [ "$CONFIG_SLIP" != "n" ]; then
+      bool ' CSLIP compressed headers' CONFIG_SLIP_COMPRESSED
+      bool ' Keepalive and linefill' CONFIG_SLIP_SMART
+      bool ' Six bit SLIP encapsulation' CONFIG_SLIP_MODE_SLIP6
+    fi
+    tristate 'PPP (point-to-point) support' CONFIG_PPP
+    if [ ! "$CONFIG_PPP" = "n" ]; then
+      comment 'CCP compressors for PPP are only built as modules.'
+    fi
+    tristate 'EQL (serial line load balancing) support' CONFIG_EQUALIZER
+    bool 'Cirrus Logic Crystal LAN cs8900 ethernet' CONFIG_UCCS8900
+    if [ "$CONFIG_UCCS8900" != "n" ]; then
+      bool 'Hardware byte-swapping support for cs8900 ethernet' CONFIG_UCCS8900_HW_SWAP
+      # ucsimm case - FIX ME!
+      hex 'Base Address for cs8900 ethernet' CS8900_BASE 0x10000300
+    fi
+    bool 'SMC 9194 ethernet' CONFIG_SMC9194
+    bool 'SMC 91C111 ethernet' CONFIG_SMC91111
+    if [ "$CONFIG_SMC91111" = "y" ]; then
+      hex 'PIO port for SMC91111' CONFIG_SMC91111_PIO 04
+      hex 'IRQ of SMC91111' CONFIG_SMC91111_IRQ 04
+      hex 'Base address of SMC91111' CONFIG_SMC91111_BASE_ADD 20000300
+    fi
+
+    bool 'NE2000/NE1000 ISA ethernet' CONFIG_NE2000
+    bool 'FEC ethernet controller (of ColdFire 5272)' CONFIG_FEC
+    if [ "$CONFIG_PCI" = "y" ]; then
+      bool 'PCI NE2000 support' CONFIG_NE2K_PCI
+      bool 'DECchip Tulip (dc21x4x) PCI support' CONFIG_DEC_ELCP
+    fi
+
+    if [ ! "$CONFIG_LEON_3" = "y" ]; then
+    bool 'Open Ethernet MAC support' CONFIG_OPEN_ETH
+    if [ "$CONFIG_OPEN_ETH" = "y" ]; then
+      hex 'IRQ of Open-Eth' IRQ_ETH_0 0C
+      hex 'Base address of Open-Eth' ETH_BASE_ADD B0000000
+      hex 'MAC-Address of Open-Eth, byte 0' MACADDR0 DE
+      hex 'MAC-Address of Open-Eth, byte 1' MACADDR1 AD
+      hex 'MAC-Address of Open-Eth, byte 2' MACADDR2 BE
+      hex 'MAC-Address of Open-Eth, byte 3' MACADDR3 EF
+      hex 'MAC-Address of Open-Eth, byte 4' MACADDR4 08
+      hex 'MAC-Address of Open-Eth, byte 5' MACADDR5 15
+    fi
+    fi
+
+  fi
+  endmenu
+fi
+
+#------------------------------------------------------------------------------
+# Filesystems configuration
+#------------------------------------------------------------------------------
+
+source fs/Config.in
+
+#------------------------------------------------------------------------------
+# Character device driver configuration
+#------------------------------------------------------------------------------
+
+mainmenu_option next_comment
+comment 'Character devices'
+
+# tristate 'Parallel printer support' CONFIG_PRINTER
+# bool 'Support for user misc device modules' CONFIG_UMISC
+if [ "$CONFIG_LEON_2" = "y" -o "$CONFIG_LEON_3" = "y" ]; then
+  bool 'LEON serial support' CONFIG_LEON_SERIAL
+fi
+
+#------------------------------------------------------------------------------
+# Kernel hacking support
+#------------------------------------------------------------------------------
+
+mainmenu_option next_comment
+comment 'Kernel hacking'
+
+bool 'Full Symbolic/Source Debugging support' CONFIG_FULLDEBUG
+if [ "$CONFIG_EXPERIMENTAL" = "y" ]; then
+  bool 'Less wasteful kmalloc.c/page_alloc.c (EXPERIMENTAL)' CONFIG_ALLOC2
+fi
+# bool 'Debug kmalloc/kfree' CONFIG_DEBUG_MALLOC
+bool 'Kernel profiling support' CONFIG_PROFILE
+if [ "$CONFIG_PROFILE" = "y" ]; then
+  int ' Profile shift count' CONFIG_PROFILE_SHIFT 2
+  bool 'Use fast second timer for profiling' CONFIG_HIGHPROFILE
+fi
+if [ "$CONFIG_EXPERIMENTAL" = "y" -a "$CONFIG_COLDFIRE" = "y" ]; then
+  bool 'Kernel Memory Protection' CONFIG_MEMORY_PROTECT
+fi
+if [ "$CONFIG_EXPERIMENTAL" = "y" -a "$CONFIG_COLDFIRE" = "y" ]; then
+  bool 'Disable BDM signals' CONFIG_BDM_DISABLE
+fi
+endmenu
