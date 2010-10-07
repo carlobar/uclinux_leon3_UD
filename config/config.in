@@ -1163,3 +1163,44 @@ if [ "$CONFIG_DEFAULTS_KERNEL_2_0" != "y" ]; then
 fi
 	
 #############################################################################
+
+
+
+#################################
+####### Aplication Testbench
+
+mainmenu_option next_comment
+comment 'MiBench'
+
+bool 'Automotive' CONFIG_USER_MIBENCH_AUTO
+
+if ["$CONFIG_USER_MIBENCH_AUTO" = "y"]; then
+	bool 'Basic Math' CONFIG_USER_MIBENCH_AUTO_BASICMATH
+	bool 'Bit Count' CONFIG_USER_MIBENCH_AUTO_BITCOUNT
+	bool 'Qsort' CONFIG_USER_MIBENCH_AUTO_QSORT
+	bool 'Susan' CONFIG_USER_MIBENCH_AUTO_SUSAN
+fi
+
+bool 'Telecomunications' CONFIG_USER_MIBENCH_TELE
+if ["$CONFIG_USER_MIBENCH_TELE" = "y"]; then
+	bool 'FFT' CONFIG_USER_MIBENCH_TELE_FFT
+fi
+
+
+endmenu
+
+
+#########################################
+###########  Hello word
+
+mainmenu_option next_comment
+comment 'Hello'
+
+comment 'Aplicacion Hello'
+bool 'Hello'		CONFIG_USER_HELLO_HELLO
+
+endmenu
+####################################################
+
+
+

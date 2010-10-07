@@ -989,13 +989,16 @@ proc menu4 {w title} {
 
 	bool $w.config.f 4 0 "PCI bios support" CONFIG_PCI
 	bool $w.config.f 4 1 "    PCI device list support" CONFIG_PCIDEVLIST
-	bool $w.config.f 4 2 "Networking support" CONFIG_NET
-	bool $w.config.f 4 3 "System V IPC" CONFIG_SYSVIPC
-	bool $w.config.f 4 4 "Reduced memory footprint" CONFIG_REDUCED_MEMORY
-	tristate $w.config.f 4 5 "Kernel support for flat binaries" CONFIG_BINFMT_FLAT
-	bool $w.config.f 4 6 "    Enable ZFLAT support" CONFIG_BINFMT_ZFLAT
-	bool $w.config.f 4 7 "Console support" CONFIG_CONSOLE
-	bool $w.config.f 4 8 "Frame buffer" CONFIG_FRAMEBUFFER
+	bool $w.config.f 4 2 "Use linux memcpy|memmove|bcopy et al" CONFIG_USE_ARCHMEMCPY
+	bool $w.config.f 4 3 "Networking support" CONFIG_NET
+	bool $w.config.f 4 4 "System V IPC" CONFIG_SYSVIPC
+	bool $w.config.f 4 5 "Reduced memory footprint" CONFIG_REDUCED_MEMORY
+	tristate $w.config.f 4 6 "Kernel support for flat binaries" CONFIG_BINFMT_FLAT
+	bool $w.config.f 4 7 "    Enable ZFLAT support" CONFIG_BINFMT_ZFLAT
+	bool $w.config.f 4 8 "Console support" CONFIG_CONSOLE
+	bool $w.config.f 4 9 "Frame buffer" CONFIG_FRAMEBUFFER
+	bool $w.config.f 4 10 "Set Kernel Command Line" CONFIG_SPARCNOMMU_SET_DEF_KERNCMD
+	istring $w.config.f 4 11 "Default Kernel Command Line" CONFIG_SPARCNOMMU_DEF_KERNCMD
 
 
 
@@ -1037,14 +1040,21 @@ proc update_menu4 {} {
 	global CONFIG_BINFMT_FLAT
 	global CONFIG_MODULES
 
-	if {($CONFIG_MODULES == 1)} then {configure_entry .menu4.config.f.x5 normal {m}} else {configure_entry .menu4.config.f.x5 disabled {m}}
+	if {($CONFIG_MODULES == 1)} then {configure_entry .menu4.config.f.x6 normal {m}} else {configure_entry .menu4.config.f.x6 disabled {m}}
 	global CONFIG_BINFMT_ZFLAT
 	if {($CONFIG_BINFMT_FLAT != 0)} then {
-	configure_entry .menu4.config.f.x6 normal {n l y}} else {configure_entry .menu4.config.f.x6 disabled {y n l}}
+	configure_entry .menu4.config.f.x7 normal {n l y}} else {configure_entry .menu4.config.f.x7 disabled {y n l}}
 	global CONFIG_CONSOLE
 	global CONFIG_FRAMEBUFFER
 	if {($CONFIG_CONSOLE == 1)} then {
-	configure_entry .menu4.config.f.x8 normal {n l y}} else {configure_entry .menu4.config.f.x8 disabled {y n l}}
+	configure_entry .menu4.config.f.x9 normal {n l y}} else {configure_entry .menu4.config.f.x9 disabled {y n l}}
+	global CONFIG_LEON_2
+	global CONFIG_LEON_3
+	global CONFIG_SPARCNOMMU_SET_DEF_KERNCMD
+	if {($CONFIG_LEON_2 == 1 || $CONFIG_LEON_3 == 1)} then {
+	configure_entry .menu4.config.f.x10 normal {n l y}} else {configure_entry .menu4.config.f.x10 disabled {y n l}}
+	global CONFIG_SPARCNOMMU_DEF_KERNCMD
+	if {($CONFIG_LEON_2 == 1 || $CONFIG_LEON_3 == 1) && ($CONFIG_SPARCNOMMU_SET_DEF_KERNCMD == 1)} then {.menu4.config.f.x11.x configure -state normal -foreground [ cget .ref -foreground ]; .menu4.config.f.x11.l configure -state normal; } else {.menu4.config.f.x11.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu4.config.f.x11.l configure -state disabled}
 }
 
 
@@ -1058,6 +1068,8 @@ set CONFIG_PCIDEVLIST [expr $CONFIG_PCIDEVLIST|16]
 set CONFIG_BINFMT_ZFLAT [expr $CONFIG_BINFMT_ZFLAT|16]
 	global CONFIG_FRAMEBUFFER
 set CONFIG_FRAMEBUFFER [expr $CONFIG_FRAMEBUFFER|16]
+	global CONFIG_SPARCNOMMU_SET_DEF_KERNCMD
+set CONFIG_SPARCNOMMU_SET_DEF_KERNCMD [expr $CONFIG_SPARCNOMMU_SET_DEF_KERNCMD|16]
 	global CONFIG_PCI
 	if {($CONFIG_PCI == 1)} then {
 	set CONFIG_PCIDEVLIST [expr $CONFIG_PCIDEVLIST&15]}
@@ -1068,6 +1080,10 @@ set CONFIG_FRAMEBUFFER [expr $CONFIG_FRAMEBUFFER|16]
 	global CONFIG_CONSOLE
 	if {($CONFIG_CONSOLE == 1)} then {
 	set CONFIG_FRAMEBUFFER [expr $CONFIG_FRAMEBUFFER&15]}
+	global CONFIG_LEON_2
+	global CONFIG_LEON_3
+	if {($CONFIG_LEON_2 == 1 || $CONFIG_LEON_3 == 1)} then {
+	set CONFIG_SPARCNOMMU_SET_DEF_KERNCMD [expr $CONFIG_SPARCNOMMU_SET_DEF_KERNCMD&15]}
 }
 
 
@@ -1394,7 +1410,14 @@ proc menu7 {w title} {
 	bool $w.config.f 7 1 "APBUart fixed speed" CONFIG_GRLIB_GAISLER_APBUART_FIXED
 	bool $w.config.f 7 2 "VGA support" CONFIG_GRLIB_GAISLER_VGA
 	hex $w.config.f 7 3 "Base address of Videomem" CONFIG_GRLIB_GAISLER_VGAMEM_BASE
-	submenu $w.config.f 7 4 "PS/2 drivers" 8
+	bool $w.config.f 7 4 "GRETH Ethernet support" CONFIG_GRLIB_GAISLER_GRETH
+	hex $w.config.f 7 5 "MAC-Address, byte 0" CONFIG_GRLIB_GAISLER_MACADDR0
+	hex $w.config.f 7 6 "MAC-Address, byte 1" CONFIG_GRLIB_GAISLER_MACADDR1
+	hex $w.config.f 7 7 "MAC-Address, byte 2" CONFIG_GRLIB_GAISLER_MACADDR2
+	hex $w.config.f 7 8 "MAC-Address, byte 3" CONFIG_GRLIB_GAISLER_MACADDR3
+	hex $w.config.f 7 9 "MAC-Address, byte 4" CONFIG_GRLIB_GAISLER_MACADDR4
+	hex $w.config.f 7 10 "MAC-Address, byte 5" CONFIG_GRLIB_GAISLER_MACADDR5
+	submenu $w.config.f 7 11 "PS/2 drivers" 8
 
 
 
@@ -1443,7 +1466,22 @@ proc update_menu7 {} {
 	configure_entry .menu7.config.f.x2 normal {n l y}} else {configure_entry .menu7.config.f.x2 disabled {y n l}}
 	global CONFIG_GRLIB_GAISLER_VGAMEM_BASE
 	if {($CONFIG_LEON_3 == 1) && ($CONFIG_CONSOLE == 1) && ($CONFIG_GRLIB_GAISLER_VGA == 1)} then {.menu7.config.f.x3.x configure -state normal -foreground [ cget .ref -foreground ]; .menu7.config.f.x3.l configure -state normal; } else {.menu7.config.f.x3.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu7.config.f.x3.l configure -state disabled}
-	if {($CONFIG_LEON_3 == 1)} then {configure_entry .menu7.config.f.x4 normal {m}} else {configure_entry .menu7.config.f.x4 disabled {m}}
+	global CONFIG_GRLIB_GAISLER_GRETH
+	if {($CONFIG_LEON_3 == 1)} then {
+	configure_entry .menu7.config.f.x4 normal {n l y}} else {configure_entry .menu7.config.f.x4 disabled {y n l}}
+	global CONFIG_GRLIB_GAISLER_MACADDR0
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {.menu7.config.f.x5.x configure -state normal -foreground [ cget .ref -foreground ]; .menu7.config.f.x5.l configure -state normal; } else {.menu7.config.f.x5.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu7.config.f.x5.l configure -state disabled}
+	global CONFIG_GRLIB_GAISLER_MACADDR1
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {.menu7.config.f.x6.x configure -state normal -foreground [ cget .ref -foreground ]; .menu7.config.f.x6.l configure -state normal; } else {.menu7.config.f.x6.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu7.config.f.x6.l configure -state disabled}
+	global CONFIG_GRLIB_GAISLER_MACADDR2
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {.menu7.config.f.x7.x configure -state normal -foreground [ cget .ref -foreground ]; .menu7.config.f.x7.l configure -state normal; } else {.menu7.config.f.x7.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu7.config.f.x7.l configure -state disabled}
+	global CONFIG_GRLIB_GAISLER_MACADDR3
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {.menu7.config.f.x8.x configure -state normal -foreground [ cget .ref -foreground ]; .menu7.config.f.x8.l configure -state normal; } else {.menu7.config.f.x8.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu7.config.f.x8.l configure -state disabled}
+	global CONFIG_GRLIB_GAISLER_MACADDR4
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {.menu7.config.f.x9.x configure -state normal -foreground [ cget .ref -foreground ]; .menu7.config.f.x9.l configure -state normal; } else {.menu7.config.f.x9.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu7.config.f.x9.l configure -state disabled}
+	global CONFIG_GRLIB_GAISLER_MACADDR5
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {.menu7.config.f.x10.x configure -state normal -foreground [ cget .ref -foreground ]; .menu7.config.f.x10.l configure -state normal; } else {.menu7.config.f.x10.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu7.config.f.x10.l configure -state disabled}
+	if {($CONFIG_LEON_3 == 1)} then {configure_entry .menu7.config.f.x11 normal {m}} else {configure_entry .menu7.config.f.x11 disabled {m}}
 }
 
 
@@ -1456,6 +1494,8 @@ set CONFIG_GRLIB_GAISLER_APBUART [expr $CONFIG_GRLIB_GAISLER_APBUART|16]
 set CONFIG_GRLIB_GAISLER_APBUART_FIXED [expr $CONFIG_GRLIB_GAISLER_APBUART_FIXED|16]
 	global CONFIG_GRLIB_GAISLER_VGA
 set CONFIG_GRLIB_GAISLER_VGA [expr $CONFIG_GRLIB_GAISLER_VGA|16]
+	global CONFIG_GRLIB_GAISLER_GRETH
+set CONFIG_GRLIB_GAISLER_GRETH [expr $CONFIG_GRLIB_GAISLER_GRETH|16]
 	global CONFIG_LEON_3
 	if {($CONFIG_LEON_3 == 1)} then {
 	set CONFIG_GRLIB_GAISLER_APBUART [expr $CONFIG_GRLIB_GAISLER_APBUART&15]}
@@ -1465,7 +1505,21 @@ set CONFIG_GRLIB_GAISLER_VGA [expr $CONFIG_GRLIB_GAISLER_VGA|16]
 	if {($CONFIG_LEON_3 == 1) && ($CONFIG_CONSOLE == 1)} then {
 	set CONFIG_GRLIB_GAISLER_VGA [expr $CONFIG_GRLIB_GAISLER_VGA&15]}
 	global CONFIG_GRLIB_GAISLER_VGAMEM_BASE
-	if {($CONFIG_LEON_3 == 1) && ($CONFIG_CONSOLE == 1) && ($CONFIG_GRLIB_GAISLER_VGA == 1)} then {validate_hex CONFIG_GRLIB_GAISLER_VGAMEM_BASE "$CONFIG_GRLIB_GAISLER_VGAMEM_BASE" 0xc0000000}
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_CONSOLE == 1) && ($CONFIG_GRLIB_GAISLER_VGA == 1)} then {validate_hex CONFIG_GRLIB_GAISLER_VGAMEM_BASE "$CONFIG_GRLIB_GAISLER_VGAMEM_BASE" c0000000}
+	if {($CONFIG_LEON_3 == 1)} then {
+	set CONFIG_GRLIB_GAISLER_GRETH [expr $CONFIG_GRLIB_GAISLER_GRETH&15]}
+	global CONFIG_GRLIB_GAISLER_MACADDR0
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {validate_hex CONFIG_GRLIB_GAISLER_MACADDR0 "$CONFIG_GRLIB_GAISLER_MACADDR0" DE}
+	global CONFIG_GRLIB_GAISLER_MACADDR1
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {validate_hex CONFIG_GRLIB_GAISLER_MACADDR1 "$CONFIG_GRLIB_GAISLER_MACADDR1" AD}
+	global CONFIG_GRLIB_GAISLER_MACADDR2
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {validate_hex CONFIG_GRLIB_GAISLER_MACADDR2 "$CONFIG_GRLIB_GAISLER_MACADDR2" BE}
+	global CONFIG_GRLIB_GAISLER_MACADDR3
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {validate_hex CONFIG_GRLIB_GAISLER_MACADDR3 "$CONFIG_GRLIB_GAISLER_MACADDR3" EF}
+	global CONFIG_GRLIB_GAISLER_MACADDR4
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {validate_hex CONFIG_GRLIB_GAISLER_MACADDR4 "$CONFIG_GRLIB_GAISLER_MACADDR4" 08}
+	global CONFIG_GRLIB_GAISLER_MACADDR5
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {validate_hex CONFIG_GRLIB_GAISLER_MACADDR5 "$CONFIG_GRLIB_GAISLER_MACADDR5" 16}
 }
 
 
@@ -1622,6 +1676,7 @@ proc menu9 {w title} {
 	hex $w.config.f 9 6 "MAC-Address of Open-Eth, byte 3" CONFIG_GRLIB_OPENCORES_MACADDR3
 	hex $w.config.f 9 7 "MAC-Address of Open-Eth, byte 4" CONFIG_GRLIB_OPENCORES_MACADDR4
 	hex $w.config.f 9 8 "MAC-Address of Open-Eth, byte 5" CONFIG_GRLIB_OPENCORES_MACADDR5
+	bool $w.config.f 9 9 "Set MII to 100mb" CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB
 
 
 
@@ -1677,6 +1732,9 @@ proc update_menu9 {} {
 	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {.menu9.config.f.x7.x configure -state normal -foreground [ cget .ref -foreground ]; .menu9.config.f.x7.l configure -state normal; } else {.menu9.config.f.x7.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu9.config.f.x7.l configure -state disabled}
 	global CONFIG_GRLIB_OPENCORES_MACADDR5
 	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {.menu9.config.f.x8.x configure -state normal -foreground [ cget .ref -foreground ]; .menu9.config.f.x8.l configure -state normal; } else {.menu9.config.f.x8.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu9.config.f.x8.l configure -state disabled}
+	global CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {
+	configure_entry .menu9.config.f.x9 normal {n l y}} else {configure_entry .menu9.config.f.x9 disabled {y n l}}
 }
 
 
@@ -1685,25 +1743,29 @@ proc update_define_menu9 {} {
 	global CONFIG_MODULES
 	global CONFIG_GRLIB_OPENCORES_ETHERNET
 set CONFIG_GRLIB_OPENCORES_ETHERNET [expr $CONFIG_GRLIB_OPENCORES_ETHERNET|16]
+	global CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB
+set CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB [expr $CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB|16]
 	global CONFIG_LEON_3
 	if {($CONFIG_LEON_3 == 1)} then {
 	set CONFIG_GRLIB_OPENCORES_ETHERNET [expr $CONFIG_GRLIB_OPENCORES_ETHERNET&15]}
 	global CONFIG_GRLIB_OPENCORES_IRQ_ETH_0
-	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_IRQ_ETH_0 "$CONFIG_GRLIB_OPENCORES_IRQ_ETH_0" 0x0C}
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_IRQ_ETH_0 "$CONFIG_GRLIB_OPENCORES_IRQ_ETH_0" 0C}
 	global CONFIG_GRLIB_OPENCORES_ETH_BASE_ADD
-	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_ETH_BASE_ADD "$CONFIG_GRLIB_OPENCORES_ETH_BASE_ADD" 0xB0000000}
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_ETH_BASE_ADD "$CONFIG_GRLIB_OPENCORES_ETH_BASE_ADD" B0000000}
 	global CONFIG_GRLIB_OPENCORES_MACADDR0
-	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR0 "$CONFIG_GRLIB_OPENCORES_MACADDR0" 0xDE}
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR0 "$CONFIG_GRLIB_OPENCORES_MACADDR0" DE}
 	global CONFIG_GRLIB_OPENCORES_MACADDR1
-	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR1 "$CONFIG_GRLIB_OPENCORES_MACADDR1" 0xAD}
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR1 "$CONFIG_GRLIB_OPENCORES_MACADDR1" AD}
 	global CONFIG_GRLIB_OPENCORES_MACADDR2
-	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR2 "$CONFIG_GRLIB_OPENCORES_MACADDR2" 0xBE}
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR2 "$CONFIG_GRLIB_OPENCORES_MACADDR2" BE}
 	global CONFIG_GRLIB_OPENCORES_MACADDR3
-	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR3 "$CONFIG_GRLIB_OPENCORES_MACADDR3" 0xEF}
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR3 "$CONFIG_GRLIB_OPENCORES_MACADDR3" EF}
 	global CONFIG_GRLIB_OPENCORES_MACADDR4
-	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR4 "$CONFIG_GRLIB_OPENCORES_MACADDR4" 0x08}
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR4 "$CONFIG_GRLIB_OPENCORES_MACADDR4" 08}
 	global CONFIG_GRLIB_OPENCORES_MACADDR5
-	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR5 "$CONFIG_GRLIB_OPENCORES_MACADDR5" 0x15}
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {validate_hex CONFIG_GRLIB_OPENCORES_MACADDR5 "$CONFIG_GRLIB_OPENCORES_MACADDR5" 15}
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {
+	set CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB [expr $CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB&15]}
 }
 
 
@@ -2487,25 +2549,26 @@ proc update_menu12 {} {
 	global CONFIG_DEC_ELCP
 	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_PCI == 1)} then {
 	configure_entry .menu12.config.f.x20 normal {n l y}} else {configure_entry .menu12.config.f.x20 disabled {y n l}}
+	global CONFIG_LEON_3
 	global CONFIG_OPEN_ETH
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1)} then {
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1)} then {
 	configure_entry .menu12.config.f.x21 normal {n l y}} else {configure_entry .menu12.config.f.x21 disabled {y n l}}
 	global IRQ_ETH_0
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x22.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x22.l configure -state normal; } else {.menu12.config.f.x22.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x22.l configure -state disabled}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x22.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x22.l configure -state normal; } else {.menu12.config.f.x22.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x22.l configure -state disabled}
 	global ETH_BASE_ADD
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x23.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x23.l configure -state normal; } else {.menu12.config.f.x23.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x23.l configure -state disabled}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x23.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x23.l configure -state normal; } else {.menu12.config.f.x23.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x23.l configure -state disabled}
 	global MACADDR0
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x24.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x24.l configure -state normal; } else {.menu12.config.f.x24.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x24.l configure -state disabled}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x24.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x24.l configure -state normal; } else {.menu12.config.f.x24.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x24.l configure -state disabled}
 	global MACADDR1
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x25.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x25.l configure -state normal; } else {.menu12.config.f.x25.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x25.l configure -state disabled}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x25.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x25.l configure -state normal; } else {.menu12.config.f.x25.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x25.l configure -state disabled}
 	global MACADDR2
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x26.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x26.l configure -state normal; } else {.menu12.config.f.x26.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x26.l configure -state disabled}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x26.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x26.l configure -state normal; } else {.menu12.config.f.x26.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x26.l configure -state disabled}
 	global MACADDR3
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x27.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x27.l configure -state normal; } else {.menu12.config.f.x27.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x27.l configure -state disabled}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x27.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x27.l configure -state normal; } else {.menu12.config.f.x27.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x27.l configure -state disabled}
 	global MACADDR4
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x28.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x28.l configure -state normal; } else {.menu12.config.f.x28.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x28.l configure -state disabled}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x28.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x28.l configure -state normal; } else {.menu12.config.f.x28.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x28.l configure -state disabled}
 	global MACADDR5
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x29.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x29.l configure -state normal; } else {.menu12.config.f.x29.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x29.l configure -state disabled}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {.menu12.config.f.x29.x configure -state normal -foreground [ cget .ref -foreground ]; .menu12.config.f.x29.l configure -state normal; } else {.menu12.config.f.x29.x configure -state disabled -foreground [ cget .ref -disabledforeground ]; .menu12.config.f.x29.l configure -state disabled}
 }
 
 
@@ -2570,11 +2633,11 @@ set CONFIG_OPEN_ETH [expr $CONFIG_OPEN_ETH|16]
 	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1)} then {
 	set CONFIG_SMC91111 [expr $CONFIG_SMC91111&15]}
 	global CONFIG_SMC91111_PIO
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_SMC91111 == 1)} then {validate_hex CONFIG_SMC91111_PIO "$CONFIG_SMC91111_PIO" 0x04}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_SMC91111 == 1)} then {validate_hex CONFIG_SMC91111_PIO "$CONFIG_SMC91111_PIO" 04}
 	global CONFIG_SMC91111_IRQ
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_SMC91111 == 1)} then {validate_hex CONFIG_SMC91111_IRQ "$CONFIG_SMC91111_IRQ" 0x04}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_SMC91111 == 1)} then {validate_hex CONFIG_SMC91111_IRQ "$CONFIG_SMC91111_IRQ" 04}
 	global CONFIG_SMC91111_BASE_ADD
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_SMC91111 == 1)} then {validate_hex CONFIG_SMC91111_BASE_ADD "$CONFIG_SMC91111_BASE_ADD" 0x20000000}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_SMC91111 == 1)} then {validate_hex CONFIG_SMC91111_BASE_ADD "$CONFIG_SMC91111_BASE_ADD" 20000300}
 	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1)} then {
 	set CONFIG_NE2000 [expr $CONFIG_NE2000&15]}
 	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1)} then {
@@ -2584,24 +2647,25 @@ set CONFIG_OPEN_ETH [expr $CONFIG_OPEN_ETH|16]
 	set CONFIG_NE2K_PCI [expr $CONFIG_NE2K_PCI&15]}
 	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_PCI == 1)} then {
 	set CONFIG_DEC_ELCP [expr $CONFIG_DEC_ELCP&15]}
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1)} then {
+	global CONFIG_LEON_3
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1)} then {
 	set CONFIG_OPEN_ETH [expr $CONFIG_OPEN_ETH&15]}
 	global IRQ_ETH_0
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex IRQ_ETH_0 "$IRQ_ETH_0" 0x0C}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex IRQ_ETH_0 "$IRQ_ETH_0" 0C}
 	global ETH_BASE_ADD
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex ETH_BASE_ADD "$ETH_BASE_ADD" 0xB0000000}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex ETH_BASE_ADD "$ETH_BASE_ADD" B0000000}
 	global MACADDR0
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR0 "$MACADDR0" 0xDE}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR0 "$MACADDR0" DE}
 	global MACADDR1
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR1 "$MACADDR1" 0xAD}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR1 "$MACADDR1" AD}
 	global MACADDR2
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR2 "$MACADDR2" 0xBE}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR2 "$MACADDR2" BE}
 	global MACADDR3
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR3 "$MACADDR3" 0xEF}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR3 "$MACADDR3" EF}
 	global MACADDR4
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR4 "$MACADDR4" 0x08}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR4 "$MACADDR4" 08}
 	global MACADDR5
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR5 "$MACADDR5" 0x15}
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {validate_hex MACADDR5 "$MACADDR5" 15}
 }
 
 
@@ -3473,6 +3537,7 @@ set CONFIG_RAMKERNEL 0
 set CONFIG_ROMKERNEL 0
 set CONFIG_PCI 0
 set CONFIG_PCIDEVLIST 0
+set CONFIG_USE_ARCHMEMCPY 0
 set CONFIG_NET 0
 set CONFIG_SYSVIPC 0
 set CONFIG_REDUCED_MEMORY 0
@@ -3480,6 +3545,8 @@ set CONFIG_BINFMT_FLAT 0
 set CONFIG_BINFMT_ZFLAT 0
 set CONFIG_CONSOLE 0
 set CONFIG_FRAMEBUFFER 0
+set CONFIG_SPARCNOMMU_SET_DEF_KERNCMD 0
+set CONFIG_SPARCNOMMU_DEF_KERNCMD "CONSOLE=/dev/ttyS0"
 set CONFIG_BLK_DEV_BLKMEM 0
 set CONFIG_BLK_DEV_IDE 0
 set CONFIG_BLK_DEV_IDECD 0
@@ -3498,18 +3565,26 @@ set CONFIG_BLK_DEV_NFA 0
 set CONFIG_GRLIB_GAISLER_APBUART 0
 set CONFIG_GRLIB_GAISLER_APBUART_FIXED 0
 set CONFIG_GRLIB_GAISLER_VGA 0
-set CONFIG_GRLIB_GAISLER_VGAMEM_BASE 0xc0000000
+set CONFIG_GRLIB_GAISLER_VGAMEM_BASE c0000000
+set CONFIG_GRLIB_GAISLER_GRETH 0
+set CONFIG_GRLIB_GAISLER_MACADDR0 DE
+set CONFIG_GRLIB_GAISLER_MACADDR1 AD
+set CONFIG_GRLIB_GAISLER_MACADDR2 BE
+set CONFIG_GRLIB_GAISLER_MACADDR3 EF
+set CONFIG_GRLIB_GAISLER_MACADDR4 08
+set CONFIG_GRLIB_GAISLER_MACADDR5 16
 set CONFIG_GRLIB_GAISLER_PS2 0
 set CONFIG_GRLIB_GAISLER_PS2_KEYBOARD 0
 set CONFIG_GRLIB_OPENCORES_ETHERNET 0
-set CONFIG_GRLIB_OPENCORES_IRQ_ETH_0 0x0C
-set CONFIG_GRLIB_OPENCORES_ETH_BASE_ADD 0xB0000000
-set CONFIG_GRLIB_OPENCORES_MACADDR0 0xDE
-set CONFIG_GRLIB_OPENCORES_MACADDR1 0xAD
-set CONFIG_GRLIB_OPENCORES_MACADDR2 0xBE
-set CONFIG_GRLIB_OPENCORES_MACADDR3 0xEF
-set CONFIG_GRLIB_OPENCORES_MACADDR4 0x08
-set CONFIG_GRLIB_OPENCORES_MACADDR5 0x15
+set CONFIG_GRLIB_OPENCORES_IRQ_ETH_0 0C
+set CONFIG_GRLIB_OPENCORES_ETH_BASE_ADD B0000000
+set CONFIG_GRLIB_OPENCORES_MACADDR0 DE
+set CONFIG_GRLIB_OPENCORES_MACADDR1 AD
+set CONFIG_GRLIB_OPENCORES_MACADDR2 BE
+set CONFIG_GRLIB_OPENCORES_MACADDR3 EF
+set CONFIG_GRLIB_OPENCORES_MACADDR4 08
+set CONFIG_GRLIB_OPENCORES_MACADDR5 15
+set CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB 0
 set CONFIG_CAN4LINUX 0
 set CONFIG_FIREWALL 0
 set CONFIG_NET_ALIAS 0
@@ -3578,22 +3653,22 @@ set CONFIG_UCCS8900_HW_SWAP 0
 set CS8900_BASE 0x10000300
 set CONFIG_SMC9194 0
 set CONFIG_SMC91111 0
-set CONFIG_SMC91111_PIO 0x04
-set CONFIG_SMC91111_IRQ 0x04
-set CONFIG_SMC91111_BASE_ADD 0x20000000
+set CONFIG_SMC91111_PIO 04
+set CONFIG_SMC91111_IRQ 04
+set CONFIG_SMC91111_BASE_ADD 20000300
 set CONFIG_NE2000 0
 set CONFIG_FEC 0
 set CONFIG_NE2K_PCI 0
 set CONFIG_DEC_ELCP 0
 set CONFIG_OPEN_ETH 0
-set IRQ_ETH_0 0x0C
-set ETH_BASE_ADD 0xB0000000
-set MACADDR0 0xDE
-set MACADDR1 0xAD
-set MACADDR2 0xBE
-set MACADDR3 0xEF
-set MACADDR4 0x08
-set MACADDR5 0x15
+set IRQ_ETH_0 0C
+set ETH_BASE_ADD B0000000
+set MACADDR0 DE
+set MACADDR1 AD
+set MACADDR2 BE
+set MACADDR3 EF
+set MACADDR4 08
+set MACADDR5 15
 set CONFIG_QUOTA 0
 set CONFIG_MINIX_FS 0
 set CONFIG_EXT_FS 0
@@ -3713,6 +3788,8 @@ proc writeconfig {file1 file2} {
 	write_tristate $cfg $autocfg CONFIG_PCI $CONFIG_PCI [list $notmod] 2
 	global CONFIG_PCIDEVLIST
 	if {($CONFIG_PCI == 1)} then {write_tristate $cfg $autocfg CONFIG_PCIDEVLIST $CONFIG_PCIDEVLIST [list $notmod] 2 }
+	global CONFIG_USE_ARCHMEMCPY
+	write_tristate $cfg $autocfg CONFIG_USE_ARCHMEMCPY $CONFIG_USE_ARCHMEMCPY [list $notmod] 2
 	global CONFIG_NET
 	write_tristate $cfg $autocfg CONFIG_NET $CONFIG_NET [list $notmod] 2
 	global CONFIG_SYSVIPC
@@ -3727,6 +3804,10 @@ proc writeconfig {file1 file2} {
 	write_tristate $cfg $autocfg CONFIG_CONSOLE $CONFIG_CONSOLE [list $notmod] 2
 	global CONFIG_FRAMEBUFFER
 	if {($CONFIG_CONSOLE == 1)} then {write_tristate $cfg $autocfg CONFIG_FRAMEBUFFER $CONFIG_FRAMEBUFFER [list $notmod] 2 }
+	global CONFIG_SPARCNOMMU_SET_DEF_KERNCMD
+	if {($CONFIG_LEON_2 == 1 || $CONFIG_LEON_3 == 1)} then {write_tristate $cfg $autocfg CONFIG_SPARCNOMMU_SET_DEF_KERNCMD $CONFIG_SPARCNOMMU_SET_DEF_KERNCMD [list $notmod] 2 }
+	global CONFIG_SPARCNOMMU_DEF_KERNCMD
+	if {($CONFIG_LEON_2 == 1 || $CONFIG_LEON_3 == 1) && ($CONFIG_SPARCNOMMU_SET_DEF_KERNCMD == 1)} then {write_string $cfg $autocfg CONFIG_SPARCNOMMU_DEF_KERNCMD "$CONFIG_SPARCNOMMU_DEF_KERNCMD" $notmod }
 	write_comment $cfg $autocfg "Floppy, IDE, and other block devices"
 	global CONFIG_BLK_DEV_BLKMEM
 	write_tristate $cfg $autocfg CONFIG_BLK_DEV_BLKMEM $CONFIG_BLK_DEV_BLKMEM [list $notmod] 2
@@ -3769,6 +3850,20 @@ proc writeconfig {file1 file2} {
 	if {($CONFIG_LEON_3 == 1) && ($CONFIG_CONSOLE == 1)} then {write_tristate $cfg $autocfg CONFIG_GRLIB_GAISLER_VGA $CONFIG_GRLIB_GAISLER_VGA [list $notmod] 2 }
 	global CONFIG_GRLIB_GAISLER_VGAMEM_BASE
 	if {($CONFIG_LEON_3 == 1) && ($CONFIG_CONSOLE == 1) && ($CONFIG_GRLIB_GAISLER_VGA == 1)} then {write_hex $cfg $autocfg CONFIG_GRLIB_GAISLER_VGAMEM_BASE $CONFIG_GRLIB_GAISLER_VGAMEM_BASE $notmod }
+	global CONFIG_GRLIB_GAISLER_GRETH
+	if {($CONFIG_LEON_3 == 1)} then {write_tristate $cfg $autocfg CONFIG_GRLIB_GAISLER_GRETH $CONFIG_GRLIB_GAISLER_GRETH [list $notmod] 2 }
+	global CONFIG_GRLIB_GAISLER_MACADDR0
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {write_hex $cfg $autocfg CONFIG_GRLIB_GAISLER_MACADDR0 $CONFIG_GRLIB_GAISLER_MACADDR0 $notmod }
+	global CONFIG_GRLIB_GAISLER_MACADDR1
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {write_hex $cfg $autocfg CONFIG_GRLIB_GAISLER_MACADDR1 $CONFIG_GRLIB_GAISLER_MACADDR1 $notmod }
+	global CONFIG_GRLIB_GAISLER_MACADDR2
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {write_hex $cfg $autocfg CONFIG_GRLIB_GAISLER_MACADDR2 $CONFIG_GRLIB_GAISLER_MACADDR2 $notmod }
+	global CONFIG_GRLIB_GAISLER_MACADDR3
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {write_hex $cfg $autocfg CONFIG_GRLIB_GAISLER_MACADDR3 $CONFIG_GRLIB_GAISLER_MACADDR3 $notmod }
+	global CONFIG_GRLIB_GAISLER_MACADDR4
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {write_hex $cfg $autocfg CONFIG_GRLIB_GAISLER_MACADDR4 $CONFIG_GRLIB_GAISLER_MACADDR4 $notmod }
+	global CONFIG_GRLIB_GAISLER_MACADDR5
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_GAISLER_GRETH == 1)} then {write_hex $cfg $autocfg CONFIG_GRLIB_GAISLER_MACADDR5 $CONFIG_GRLIB_GAISLER_MACADDR5 $notmod }
 	if {($CONFIG_LEON_3 == 1)} then {write_comment $cfg $autocfg "PS/2 drivers"}
 	global CONFIG_GRLIB_GAISLER_PS2
 	if {($CONFIG_LEON_3 == 1)} then {write_tristate $cfg $autocfg CONFIG_GRLIB_GAISLER_PS2 $CONFIG_GRLIB_GAISLER_PS2 [list $notmod] 2 }
@@ -3793,6 +3888,8 @@ proc writeconfig {file1 file2} {
 	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {write_hex $cfg $autocfg CONFIG_GRLIB_OPENCORES_MACADDR4 $CONFIG_GRLIB_OPENCORES_MACADDR4 $notmod }
 	global CONFIG_GRLIB_OPENCORES_MACADDR5
 	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {write_hex $cfg $autocfg CONFIG_GRLIB_OPENCORES_MACADDR5 $CONFIG_GRLIB_OPENCORES_MACADDR5 $notmod }
+	global CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB
+	if {($CONFIG_LEON_3 == 1) && ($CONFIG_GRLIB_OPENCORES_ETHERNET == 1)} then {write_tristate $cfg $autocfg CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB $CONFIG_GRLIB_OPENCORES_ETHERNET_MII_100MB [list $notmod] 2 }
 	write_comment $cfg $autocfg "Controller Area Network Cards/Chips"
 	global CONFIG_CAN4LINUX
 	write_tristate $cfg $autocfg CONFIG_CAN4LINUX $CONFIG_CAN4LINUX [list $notmod] 2
@@ -3956,23 +4053,23 @@ proc writeconfig {file1 file2} {
 	global CONFIG_DEC_ELCP
 	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_PCI == 1)} then {write_tristate $cfg $autocfg CONFIG_DEC_ELCP $CONFIG_DEC_ELCP [list $notmod] 2 }
 	global CONFIG_OPEN_ETH
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1)} then {write_tristate $cfg $autocfg CONFIG_OPEN_ETH $CONFIG_OPEN_ETH [list $notmod] 2 }
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1)} then {write_tristate $cfg $autocfg CONFIG_OPEN_ETH $CONFIG_OPEN_ETH [list $notmod] 2 }
 	global IRQ_ETH_0
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg IRQ_ETH_0 $IRQ_ETH_0 $notmod }
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg IRQ_ETH_0 $IRQ_ETH_0 $notmod }
 	global ETH_BASE_ADD
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg ETH_BASE_ADD $ETH_BASE_ADD $notmod }
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg ETH_BASE_ADD $ETH_BASE_ADD $notmod }
 	global MACADDR0
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR0 $MACADDR0 $notmod }
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR0 $MACADDR0 $notmod }
 	global MACADDR1
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR1 $MACADDR1 $notmod }
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR1 $MACADDR1 $notmod }
 	global MACADDR2
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR2 $MACADDR2 $notmod }
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR2 $MACADDR2 $notmod }
 	global MACADDR3
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR3 $MACADDR3 $notmod }
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR3 $MACADDR3 $notmod }
 	global MACADDR4
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR4 $MACADDR4 $notmod }
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR4 $MACADDR4 $notmod }
 	global MACADDR5
-	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR5 $MACADDR5 $notmod }
+	if {($CONFIG_NET == 1) && ($CONFIG_NETDEVICES == 1) && ($CONFIG_LEON_3 != 1) && ($CONFIG_OPEN_ETH == 1)} then {write_hex $cfg $autocfg MACADDR5 $MACADDR5 $notmod }
 	write_comment $cfg $autocfg "Filesystems"
 	global CONFIG_QUOTA
 	write_tristate $cfg $autocfg CONFIG_QUOTA $CONFIG_QUOTA [list $notmod] 2

@@ -1,0 +1,32 @@
+fault.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/head.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ptrace.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mman.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/tasks.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/signal.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/page.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/pgtable.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/traps.h
+init.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/signal.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/swap.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/blk/dev/ram.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/blk.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/page.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/pgtable.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/net.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/coldfire.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/shglcore.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/blk/dev/initrd.h)

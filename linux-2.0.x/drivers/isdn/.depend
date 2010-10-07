@@ -1,70 +1,70 @@
 isdn_audio.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/isdn.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/isdn.h \
    isdn_audio.h \
    isdn_common.h
 isdn_cards.o:  \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/drv/icn.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/drv/hisax.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/drv/pcbit.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/drv/avmb1.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/pci.h)
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/drv/icn.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/drv/hisax.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/drv/pcbit.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/drv/avmb1.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/pci.h)
 isdn_common.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/isdn.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/version.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/isdn.h \
    isdn_common.h \
    isdn_tty.h \
    isdn_net.h \
    isdn_ppp.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/audio.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/audio.h) \
    isdn_audio.h \
    isdn_cards.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/ppp.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/timeout/rules.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/mpp.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netdevices.h)
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/ppp.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/timeout/rules.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/mpp.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/netdevices.h)
 isdn_common.h:  \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/timeout/rules.h)
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/timeout/rules.h)
 	@touch isdn_common.h
 isdn_net.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/isdn.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/isdn.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/if_arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
    isdn_common.h \
    isdn_net.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/ppp.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/ppp.h) \
    isdn_ppp.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/inet.h)
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/inet.h)
 isdn_ppp.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/isdn.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/version.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/isdn.h \
    isdn_common.h \
    isdn_ppp.h \
    isdn_net.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/mpp.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/ppp/vj.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_begin.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_end.h
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/mpp.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/ppp/vj.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_begin.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_end.h
 isdn_ppp.h: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ppp_defs.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ppp_defs.h
 	@touch isdn_ppp.h
 isdn_syms.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/isdn.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/version.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/isdn.h \
    isdn_common.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_begin.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_end.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_begin.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_end.h
 isdn_tty.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/isdn.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/isdn.h \
    isdn_common.h \
    isdn_tty.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/isdn/audio.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/isdn/audio.h) \
    isdn_audio.h
 .PRECIOUS:	isdn_common.h \
 	isdn_ppp.h \

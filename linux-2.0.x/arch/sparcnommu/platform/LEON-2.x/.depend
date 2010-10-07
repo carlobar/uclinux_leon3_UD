@@ -1,0 +1,23 @@
+entry.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/head.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/asi.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/kgdb.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/contregs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/ptrace.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/psr.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/cprefix.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/page.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/winmacro.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/signal.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/asmmacro.h
+start.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/leon.h \
+   hex.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ctype.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/leon/3.h)
+systbls.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/cprefix.h

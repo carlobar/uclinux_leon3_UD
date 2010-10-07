@@ -2399,3 +2399,42 @@ CONFIG_KERNEL_INIT_PATH
   will be used as the init process by setting this option appropriately.
 
   Default is the standard init path, '/sbin/init'.
+
+
+
+##### help for the aplications hello and testbench
+
+CONFIG_USER_HELLO_HELLO
+  Hello word applicaction
+
+
+
+CONFIG_USER_MIBENCH_MIBENCH
+  Testbench for embedded systems
+
+
+# automotive
+CONFIG_USER_MIBENCH_AUTO_BASICMATH
+  Simple mathematical calculations
+
+CONFIG_USER_MIBENCH_AUTO_BITCOUNT
+  Test the bit manipulation abilities
+
+CONFIG_USER_MIBENCH_AUTO_QSORT
+  Sort a large array of strings into ascending order using the quick sort algorithm 
+
+CONFIG_USER_MIBENCH_AUTO_SUSAN
+  Is an image recognition package
+
+
+# telecomunications
+CONFIG_USER_MIBENCH_TELE_FFT
+  Performs a Fast Fourier Transform and Inverse transform on a array of data
+
+
+
+
+
+
+
+

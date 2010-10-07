@@ -1,101 +1,101 @@
 check.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/head.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ptrace.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mman.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/signal.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/head.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ptrace.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mman.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h
 dir.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/msdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/limits.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/umsdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/msdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/limits.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/umsdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/malloc.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h
 emd.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/msdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/umsdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/msdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/umsdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h
 file.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/msdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/msdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/umsdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/msdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/msdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/umsdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h
 inode.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/msdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/umsdos_fs.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/msdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/umsdos_fs.h
 ioctl.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/msdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/umsdos_fs.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/msdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/umsdos_fs.h
 mangle.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/umsdos_fs.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/umsdos_fs.h
 namei.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/msdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/umsdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/msdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/umsdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/malloc.h
 rdir.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/msdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/limits.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/umsdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/msdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/limits.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/umsdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/malloc.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h
 symlink.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/msdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/umsdos_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/msdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/umsdos_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/malloc.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h

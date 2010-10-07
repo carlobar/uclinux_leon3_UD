@@ -1,28 +1,28 @@
 br.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/br.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/timer.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/net.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/if_arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/br.h
 br_tree.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/br.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/malloc.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/br.h
 sysctl_net_bridge.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sysctl.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sysctl.h

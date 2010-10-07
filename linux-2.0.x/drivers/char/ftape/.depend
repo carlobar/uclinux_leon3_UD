@@ -1,35 +1,35 @@
 calibr.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/io.h \
    tracing.h \
    calibr.h \
    fdc-io.h
 calibr.h: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timex.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/timex.h
 	@touch calibr.h
 ecc.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/errno.h \
    tracing.h \
    ecc.h
 fc-10.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/io.h \
    tracing.h \
    fdc-io.h \
    fc-10.h
 fdc-io.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioport.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/irq.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ioport.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/io.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/dma.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/irq.h \
    tracing.h \
    fdc-io.h \
    fdc-isr.h \
@@ -39,12 +39,12 @@ fdc-io.o: \
    fc-10.h \
    qic117.h
 fdc-io.h: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fdreg.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fdreg.h
 	@touch fdc-io.h
 fdc-isr.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/io.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/io.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/dma.h \
    tracing.h \
    fdc-isr.h \
    qic117.h \
@@ -55,17 +55,17 @@ fdc-isr.o: \
    calibr.h \
    ftape-bsm.h
 ftape-bsm.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
    tracing.h \
    ftape-bsm.h \
    ftape-ctl.h \
    ftape-rw.h
 ftape-ctl.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
    tracing.h \
    ftape-eof.h \
    ftape-io.h \
@@ -76,14 +76,14 @@ ftape-ctl.o: \
    qic117.h \
    ftape-bsm.h
 ftape-ctl.h: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioctl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mtio.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ioctl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mtio.h \
    vendors.h
 	@touch ftape-ctl.h
 ftape-eof.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
    tracing.h \
    ftape-eof.h \
    ftape-write.h \
@@ -92,14 +92,14 @@ ftape-eof.o: \
    ftape-ctl.h \
    ftape-bsm.h
 ftape-io.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ioctl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mtio.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ioctl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mtio.h \
    tracing.h \
    fdc-io.h \
    qic117.h \
@@ -115,11 +115,11 @@ ftape-io.h: \
    vendors.h
 	@touch ftape-io.h
 ftape-read.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
    tracing.h \
    ftape-read.h \
    qic117.h \
@@ -131,9 +131,9 @@ ftape-read.o: \
    ecc.h \
    ftape-bsm.h
 ftape-rw.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
    tracing.h \
    ftape-rw.h \
    fdc-io.h \
@@ -150,11 +150,11 @@ ftape-rw.h: \
    kernel-interface.h
 	@touch ftape-rw.h
 ftape-write.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
    tracing.h \
    ftape-write.h \
    ftape-read.h \
@@ -166,17 +166,17 @@ ftape-write.o: \
    ecc.h \
    ftape-bsm.h
 kernel-interface.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/major.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/malloc.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/dma.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/version.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/signal.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/major.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/malloc.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/dma.h \
    tracing.h \
    kernel-interface.h \
    ftape-read.h \
@@ -186,14 +186,14 @@ kernel-interface.o: \
    ftape-rw.h \
    fdc-io.h
 kernel-interface.h: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/linkage.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/signal.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/linkage.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/signal.h
 	@touch kernel-interface.h
 tracing.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ftape.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ftape.h \
    tracing.h
 tracing.h: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h
 	@touch tracing.h
 .PRECIOUS:	calibr.h \
 	fdc-io.h \

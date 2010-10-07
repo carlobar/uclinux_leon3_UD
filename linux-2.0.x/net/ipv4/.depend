@@ -1,824 +1,824 @@
 af_inet.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/major.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/rarp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/raw.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip_fw.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/alias.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_alias.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/bridge.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/br.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/kerneld.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kerneld.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/net/radio.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/wireless.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/dlci.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/dlci/module.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/tcp/nagle/off.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/multicast.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/transparent/proxy.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/inet/rarp.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/acct.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/firewall.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/mroute.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ipsec.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/major.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/timer.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/net.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/interrupt.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/proc_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/rarp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/raw.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip_fw.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/alias.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_alias.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/bridge.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/br.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/kerneld.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kerneld.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/net/radio.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/wireless.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/dlci.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/dlci/module.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/tcp/nagle/off.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/multicast.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/transparent/proxy.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/proc/fs.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/inet/rarp.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/acct.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/firewall.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/mroute.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ipsec.h)
 arp.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/etherdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fddidevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/trdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ax25.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ax25/module.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/netrom/module.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netrom.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/net/alias.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net_alias.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/arpd.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netlink.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/multicast.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/fddi.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/net/ethernet.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ap1000.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/etherdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fddidevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/if_arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/trdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/proc_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/arp.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ax25.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ax25/module.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ax25.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/netrom.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/netrom/module.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/netrom.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/net/alias.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/net_alias.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/arpd.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/netlink.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/multicast.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/fddi.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/net/ethernet.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ap1000.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/proc/fs.h)
 devinet.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/bitops.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_ether.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/etherdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/classless.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/bitops.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/interrupt.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/if_ether.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/etherdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/arp.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/classless.h)
 icmp.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/snmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/snmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/no/icmp/limit.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/no/path/mtu/discovery.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/dumb/router.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/ignore/echo/requests.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/addr/agent.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/transparent/proxy.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/snmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/snmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/timer.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/no/icmp/limit.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/no/path/mtu/discovery.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/dumb/router.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/ignore/echo/requests.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/addr/agent.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/transparent/proxy.h)
 igmp.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/igmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/multicast.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/if_arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/igmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/multicast.h)
 ip_alias.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net_alias.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_alias.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/if.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/net_alias.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_alias.h
 ip_forward.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip_fw.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/forward.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/mroute.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/firewall.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/no/icmp/redirect.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/icmp.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/acct.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/firewall.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip_fw.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/forward.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/mroute.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/firewall.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/no/icmp/redirect.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/icmp.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/acct.h)
 ip_fragment.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip_fw.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/firewall.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip_fw.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h
 ip_fw.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip_fw.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/acct.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/firewall.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/firewall/verbose.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/transparent/proxy.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/ipautofw.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/ipportfw.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/firewall.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip_fw.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/proc_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/acct.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/firewall.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/firewall/verbose.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/transparent/proxy.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/ipautofw.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/ipportfw.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/proc/fs.h)
 ip_fwchains.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/version.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip_fwchains.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/transparent/proxy.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/version.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/firewall.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip_fwchains.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/proc_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/transparent/proxy.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/proc/fs.h)
 ip_input.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/etherdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/snmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/raw.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/igmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip_fw.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mroute.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netlink.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/net/alias.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net_alias.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/forward.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/transparent/proxy.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/firewall.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/mroute.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/net/ipv6.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/acct.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/nosr.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/always/defrag.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/multicast.h)
-ip_masq.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip_fw.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/pptp.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/pptp/multiclient.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/ipsec.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/ipsec/expire.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/icmp.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_begin.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_end.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/ipautofw.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/ipportfw.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_begin.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_end.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/ipsec/noguess.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_begin.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_end.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h)
-ip_masq_app.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_begin.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/symtab_end.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/ipautofw.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h)
-ip_masq_cuseeme.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h
-ip_masq_ftp.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h
-ip_masq_irc.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h
-ip_masq_quake.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h
-ip_masq_raudio.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h
-ip_masq_vdolive.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip_masq.h
-ip_options.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h
-ip_output.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/etherdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/snmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/raw.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/igmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip_fw.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mroute.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netlink.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/multicast.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/firewall.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/acct.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/mroute.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/rtnetlink.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h)
-ip_sockglue.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip_fw.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mroute.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/multicast.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/firewall.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/acct.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/mroute.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/ipautofw.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/masquerade/ipportfw.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/etherdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/proc_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/snmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/raw.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/igmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip_fw.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/firewall.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mroute.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/netlink.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/net/alias.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/net_alias.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/forward.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/transparent/proxy.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/firewall.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/mroute.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/net/ipv6.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/acct.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/nosr.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/always/defrag.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/multicast.h)
 ipip.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/datalink.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ipip.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/firewall.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/datalink.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ipip.h
+ip_masq_app.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/proc_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_begin.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_end.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/ipautofw.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/proc/fs.h)
+ip_masq.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/proc_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip_fw.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/pptp.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/pptp/multiclient.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/ipsec.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/ipsec/expire.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/icmp.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_begin.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_end.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/ipautofw.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/ipportfw.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_begin.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_end.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/ipsec/noguess.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_begin.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/symtab_end.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/proc/fs.h)
+ip_masq_cuseeme.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h
+ip_masq_ftp.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h
+ip_masq_irc.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h
+ip_masq_quake.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h
+ip_masq_raudio.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h
+ip_masq_vdolive.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip_masq.h
 ipmr.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mroute.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/notifier.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/timer.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/proc_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mroute.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/notifier.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/proc/fs.h)
+ip_options.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h
+ip_output.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/etherdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/proc_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/snmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/raw.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/igmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip_fw.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/firewall.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mroute.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/netlink.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/multicast.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/firewall.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/acct.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/mroute.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/rtnetlink.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/proc/fs.h)
+ip_sockglue.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/firewall.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip_fw.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mroute.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/multicast.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/firewall.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/acct.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/mroute.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/ipautofw.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/masquerade/ipportfw.h)
 packet.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_packet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/if_packet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/timer.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h
 proc.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/net.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/un.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/param.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/raw.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/syn/cookies.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/net.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/un.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/param.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/raw.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/syn/cookies.h)
 protocol.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ipip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/igmp.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/net/ipip.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/multicast.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/timer.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ipip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/igmp.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/net/ipip.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/multicast.h)
 rarp.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/module.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/etherdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/rarp.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ax25.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ax25/module.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ax25.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/proc_fs.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/fddi.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/proc/fs.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/module.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/if_arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/etherdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/rarp.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ax25.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ax25/module.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ax25.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/proc_fs.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/fddi.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/proc/fs.h)
 raw.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mroute.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/raw.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/mroute.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/transparent/proxy.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/timer.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mroute.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/raw.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/mroute.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/transparent/proxy.h)
 route.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/bitops.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/if_arp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/netlink.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/kerneld.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kerneld.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/no/path/mtu/discovery.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/classless.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/bitops.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/if_arp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/netlink.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/kerneld.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kerneld.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/no/path/mtu/discovery.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/classless.h)
 sysctl_net_ipv4.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sysctl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sysctl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h
 tcp.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/random.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/no/path/mtu/discovery.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/random.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/no/path/mtu/discovery.h)
 tcp_input.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/random.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/rst/cookies.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/syn/cookies.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/transparent/proxy.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/tcp/rfc1337.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/inet/pctcp.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/skip.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/random.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/rst/cookies.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/syn/cookies.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/transparent/proxy.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/tcp/rfc1337.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/inet/pctcp.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/skip.h)
 tcp_output.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/ip_fw.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/firewall.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/rst/cookies.h) \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/random.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/no/path/mtu/discovery.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/firewall.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/syn/cookies.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/ip_fw.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/firewall.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/interrupt.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/rst/cookies.h) \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/random.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/no/path/mtu/discovery.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/firewall.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/syn/cookies.h)
 tcp_timer.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h
 timer.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/interrupt.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/arp.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/timer.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/interrupt.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/arp.h
 udp.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/fcntl.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sockios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/timer.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/termios.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/snmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/sock.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/udp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/icmp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/route.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/checksum.h \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/transparent/proxy.h) \
-   $(wildcard /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/config/ip/multicast.h)
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/fcntl.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sockios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/timer.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/termios.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/snmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/sock.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/udp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/icmp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/route.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/checksum.h \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/transparent/proxy.h) \
+   $(wildcard /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/config/ip/multicast.h)
 utils.o: \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/segment.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/asm/system.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/types.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/kernel.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/sched.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/string.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/mm.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/socket.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/in.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/errno.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/stat.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/inet.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/netdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/etherdevice.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/ip.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/protocol.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/net/tcp.h \
-   /mnt/hd/eiselekd/snapgear/snapgear-p14/linux-2.0.x/include/linux/skbuff.h
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/segment.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/system.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/kernel.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/sched.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/string.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/mm.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/socket.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/in.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/errno.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/stat.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/inet.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/netdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/etherdevice.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/ip.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/protocol.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/net/tcp.h \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/skbuff.h

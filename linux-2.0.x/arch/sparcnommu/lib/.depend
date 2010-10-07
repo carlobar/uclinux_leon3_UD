@@ -1,0 +1,8 @@
+ashrdi3.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/cprefix.h
+memcpy.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/cprefix.h
+memset.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/linux/types.h
+strlen.o: \
+   /home/beren/git/uclinux_leon3_UD/linux-2.0.x/include/asm/cprefix.h

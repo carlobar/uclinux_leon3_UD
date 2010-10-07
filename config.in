@@ -1,0 +1,51 @@
+mainmenu_name 'SnapGear Embedded Linux Configuration'
+mainmenu_option next_comment
+comment 'Vendor/Product Selection'
+comment 'Select the Vendor you wish to target'
+choice 'Vendor' "gaisler CONFIG_DEFAULTS_GAISLER \
+" gaisler
+comment 'Select the Product you wish to target'
+if [ "$CONFIG_DEFAULTS_GAISLER" = "y" ]; then
+choice 'gaisler Products' "leon2 CONFIG_DEFAULTS_GAISLER_LEON2 \
+leon3 CONFIG_DEFAULTS_GAISLER_LEON3 \
+" leon3
+fi
+comment 'Select the options for a selected Product'
+
+mainmenu_name 'Gaisler/Leon2/3 options'
+mainmenu_option next_comment
+comment 'Gaisler/Leon2/3 options'
+
+source vendors/gaisler/common/config.in
+
+endmenu
+
+#mainmenu_name 'Gaisler/Leon2/mmu options'
+#mainmenu_option next_comment
+#comment 'Gaisler/Leon2/mmu options'
+#
+#source vendors/gaisler/common/config.in
+#
+#endmenu
+endmenu
+mainmenu_option next_comment
+comment 'Kernel/Library/Defaults Selection'
+comment 'Kernel is linux-2.0.x'
+define_bool CONFIG_DEFAULTS_KERNEL_2_0 y
+choice 'Libc Version' "glibc-from-compiler CONFIG_DEFAULTS_LIBC_GLIBC_FROM_COMPILER \
+microLibc CONFIG_DEFAULTS_LIBC_MICROLIBC \
+uClibc CONFIG_DEFAULTS_LIBC_UCLIBC \
+none CONFIG_DEFAULTS_LIBC_NONE \
+" none
+bool 'Default all settings (lose changes)'	CONFIG_DEFAULTS_OVERRIDE
+bool 'Customize Kernel Settings'			CONFIG_DEFAULTS_KERNEL
+bool 'Customize Vendor/User Settings'		CONFIG_DEFAULTS_VENDOR
+bool 'Update Default Vendor Settings'		CONFIG_DEFAULTS_VENDOR_UPDATE
+endmenu
+
+
+
+mainmenu_option next_comment
+comment 'Template Configurations'
+bool 'Update configurations with above selection'			CONFIG_TEMPLATES_UPDATE
+endmenu

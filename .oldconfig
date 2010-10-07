@@ -1,0 +1,5 @@
+OLD_VENDOR="gaisler"
+OLD_PRODUCT="leon3"
+OLD_LINUXDIR="linux-2.0.x"
+OLD_LIBCDIR="uClibc"
+OLD_LANGUAGE=""

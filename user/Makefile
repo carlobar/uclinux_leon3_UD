@@ -1,6 +1,8 @@
 #
 #	Makefile -- Build instructions for user level apps
 #
+# included aplicacions hello and testbench
+
 
 .EXPORT_ALL_VARIABLES:
 .PHONY: config all romfs clean prune
@@ -127,6 +129,9 @@ dir_$(CONFIG_USER_GDBSERVER_GDBREPLAY)      += gdbserver
 dir_$(CONFIG_USER_GDBSERVER_GDBSERVER)      += gdbserver
 dir_$(CONFIG_USER_GETTYD_GETTYD)            += gettyd
 dir_$(CONFIG_USER_HD_HD)                    += hd
+
+dir_$(CONFIG_USER_HELLO_HELLO) 	            += hello
+
 dir_$(CONFIG_USER_HOSTAP_HOSTAP)            += hostap
 dir_$(CONFIG_USER_HTTPD_HTTPD)              += httpd
 dir_$(CONFIG_USER_HWCLOCK_HWCLOCK)          += hwclock
@@ -296,6 +301,10 @@ dir_$(CONFIG_USER_TCPDUMP_TCPDUMP)          += tcpdump
 dir_$(CONFIG_USER_TCSH_TCSH)                += tcsh
 dir_$(CONFIG_USER_TELNET_TELNET)            += telnet
 dir_$(CONFIG_USER_TELNETD_TELNETD)          += telnetd
+
+#dir_$(CONFIG_USER_MIBENCH_MIBENCH)          += mibench
+
+
 dir_$(CONFIG_USER_TFTP_TFTP)                += tftp
 dir_$(CONFIG_USER_TFTPD_TFTPD)              += tftpd
 dir_$(CONFIG_USER_THREADDEMOS_THREADDEMOS)  += threaddemos
@@ -332,6 +341,7 @@ dir_$(CONFIG_USER_ZEBRA_ZEBRA_ZEBRA)        += zebra
 
 dir_$(CONFIG_USER_HDPARM_HDPARM)            += hdparm
 dir_y += games
+dir_y += mibench
 
 all: config config-lib
 	for i in $(sort $(dir_y)) $(dir_v) $(dir_p); do \
