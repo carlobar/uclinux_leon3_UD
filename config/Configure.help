@@ -2431,7 +2431,9 @@ CONFIG_USER_MIBENCH_AUTO_SUSAN
 CONFIG_USER_MIBENCH_TELE_FFT
   Performs a Fast Fourier Transform and Inverse transform on a array of data
 
-
+# recursive
+CONFIG_USER_MIBENCH_RECURSIVE_FIBO
+  Find a number in the Fibonacci sequence
 
 
 

@@ -1,7 +1,7 @@
 OBJ = main.o 
 FILE = fftmisc.c  fourierf.c
 CFLAGS = -static  -v  -lc -lgcc
-EXEC=main
+EXEC=fft
 
 
 all:$(EXEC)
@@ -19,8 +19,8 @@ $(EXEC): ${OBJ} Makefile
 
 
 clean:
-	rm -rf $(EXEC) *.elf *.gdb *.o 
+	rm -rf $(EXEC) *.elf* *.gdb *.o 
 
 
 romfs: 
-	$(ROMFSINST)	/bin/main
+	$(ROMFSINST)	/bin/fft

@@ -41,6 +41,8 @@ _trap_table:
   TRAP(_locore_window_underflow);	! 06 window_underflow
 
 
+
+
 /* Number of register windows */
 #define NWINDOWS 	8
 
@@ -239,10 +241,21 @@ getbase:
 
 _hardreset:
 	
+	flush
+
+  	.global gpio_init
+
+gpio_init:
+	set	0x00000003, %o0		! Value of port direction register 
+	set	0x00000001, %o1		! Value of port output register
+	set	0x80000b00, %o2		! GPIO address
+	st	%o0, [%o2 + 0x08]
+	st	%o1, [%o2 + 0x04]
+
+
+
 /* First, we wash the global registers to avoid possible EDAC errors.
  */
-
-	flush
 
 	set	0x81000f, %g2
         !set	0x00000, %g2

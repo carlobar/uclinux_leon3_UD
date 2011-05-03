@@ -12,6 +12,7 @@ SECTIONS
   _text = .;
 
   .text : {
+
     _start = .;
     *(.start)
     *(.text)
@@ -30,7 +31,6 @@ SECTIONS
     *(.got) 
     _got_end = .;
     *(.got.plt)
-
     . = ALIGN(4);
   }
   _etext = .;

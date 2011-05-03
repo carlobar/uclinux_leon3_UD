@@ -11,6 +11,16 @@ struct myStringStruct {
 
 int compare(const void *elem1, const void *elem2)
 {
+
+__asm__ ("set	0x00000003, %o0\n\t"
+	 "set	0x00000001, %o1\n\t"
+	 "set	0x80000b00, %o2\n\t"
+	 "st	%o0, [%o2 + 0x08]\n\t"
+	 "st	%o1, [%o2 + 0x04]\n\t");
+
+
+
+
   int result;
   
   result = strcmp((*((struct myStringStruct *)elem1)).qstring, (*((struct myStringStruct *)elem2)).qstring);
@@ -41,5 +51,11 @@ main(int argc, char *argv[]) {
   
   for(i=0;i<count;i++)
     printf("%s\n", array[i].qstring);
+
+
+__asm__ ("set	0x00000000, %o1\n\t"
+	 "set	0x80000b00, %o2\n\t"
+	 "st	%o1, [%o2 + 0x04]\n\t");
+
   return 0;
 }

@@ -13,9 +13,9 @@
 #define BOOTLOADER_ftreg    0x13b000
 
 #define BOOTLOADER_grlib_sdram 0x8640013b
-#define BOOTLOADER_ddr2spa_cfg1 0x91a082bc
-#define BOOTLOADER_ddr2spa_cfg3 0x2150000
-#define BOOTLOADER_ddrspa_cfg1 0xa1a082bc
+#define BOOTLOADER_ddr2spa_cfg1 0x91a0830a
+#define BOOTLOADER_ddr2spa_cfg3 0x2990000
+#define BOOTLOADER_ddrspa_cfg1 0xa9a0830a
 
 #define BOOTLOADER_freq      40500000
 

@@ -7,7 +7,8 @@ SECTIONS
 {
         . = 0x40000000;
 	.stage1 : {
-	        _start = .;
+		_start = .;
+		start_gpio.o(start_gpio);
 		locore_stage1.o
 	}
         . = ALIGN(0x4000);

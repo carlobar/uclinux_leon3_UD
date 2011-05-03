@@ -15,3 +15,4 @@ clean:
 
 romfs: 
 	$(ROMFSINST)	/bin/susan
+	$(ROMFSINST) input_small.pgm	/input_small.pgm

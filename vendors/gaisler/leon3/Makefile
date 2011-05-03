@@ -179,7 +179,7 @@ $(TSIMIMAGE): tsim.lds.o tsimlocore.o $(LINUXIMG) $(ROMFSIMGOBJ)
 ###################################################################################
 # dsu loadable image: locore_stage1.o at beginning of ram, rest in ram 
 
-$(DSUIMAGE): dsu.lds.o locore_stage1.o $(LINUXIMG) $(ROMFSIMGOBJ) 
+$(DSUIMAGE): dsu.lds.o locore_stage1.o $(LINUXIMG) $(ROMFSIMGOBJ) start_gpio.o
 	$(CROSS_COMPILE)ld -X -T $^ -o $@ #-L$(LIBGCC_DIR) -lgcc
 
 ###################################################################################
@@ -201,9 +201,9 @@ $(COMONDIR)/piggy: $(DSUIMAGE)
 
 
 ###################################################################################
-# flashbz compressed loadable image: .text in ram, .data in ram, decompresses to ram at bootup 
+# flashbz compressed loadable image: .text in ram, .data in ram, decompresses to ram at bootup ---  start_gpio was added
 
-$(FLASHBZIMAGE): flashbz.lds.o bzlocore.o  bzmain.o $(COMONLIB) flashbzpiggy.o 
+$(FLASHBZIMAGE): flashbz.lds.o bzlocore.o bzmain.o $(COMONLIB) flashbzpiggy.o
 	$(CROSS_COMPILE)ld -X -T $^ -o $@ #-M
 
 flashbz.lds.o: flashbz.lds.S flashbzpiggy 
@@ -243,6 +243,10 @@ bzlocore.o: bzlocore.S ../common/bootloader.h
 tsimlocore.o: tsimlocore.S ../common/bootloader.h
 	$(CROSS_COMPILE)gcc -DBZIMAGE -D__ASSEMBLY__ -I$(ROOTDIR)/$(LINUXDIR)/include -c -o $@ $<
 
+
+##### start_gpio was added
+start_gpio.o: start_gpio.S ../common/bootloader.h
+	$(CROSS_COMPILE)gcc -DBZIMAGE -D__ASSEMBLY__ -I$(ROOTDIR)/$(LINUXDIR)/include -c -o $@ $<
 
 
 $(COMONDIR)/prom_stage1.S: $(COMONDIR)/prom_config.h

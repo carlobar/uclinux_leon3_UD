@@ -14,6 +14,7 @@ dir_$(CONFIG_USER_MIBENCH_AUTO_BASICMATH)        += automotive/basicmath
 dir_$(CONFIG_USER_MIBENCH_AUTO_BITCOUNT)         += automotive/bitcount
 dir_$(CONFIG_USER_MIBENCH_AUTO_QSORT)            += automotive/qsort
 dir_$(CONFIG_USER_MIBENCH_AUTO_SUSAN)            += automotive/susan
+dir_$(CONFIG_USER_MIBENCH_RECURSIVE_FIBO)            += recursive/fibo
 
 # telecomunications
 dir_$(CONFIG_USER_MIBENCH_TELE_FFT)            += telecomm/FFT

@@ -1172,13 +1172,9 @@ fi
 mainmenu_option next_comment
 comment 'MiBench'
 
-#bool ''		CONFIG_USER_MIBENCH_MIBENCH
-#if ["$CONFIG_USER_MIBENCH_MIBENCH" = "y"]; then
-
 bool 'Automotive' CONFIG_USER_MIBENCH_AUTO
 
-if ["$CONFIG_USER_MIBENCH_AUTO_AUTO" = "y"]; then
-#	comment 'Automotive'
+if ["$CONFIG_USER_MIBENCH_AUTO" = "y"]; then
 	bool 'Basic Math' CONFIG_USER_MIBENCH_AUTO_BASICMATH
 	bool 'Bit Count' CONFIG_USER_MIBENCH_AUTO_BITCOUNT
 	bool 'Qsort' CONFIG_USER_MIBENCH_AUTO_QSORT
@@ -1186,13 +1182,13 @@ if ["$CONFIG_USER_MIBENCH_AUTO_AUTO" = "y"]; then
 fi
 
 bool 'Telecomunications' CONFIG_USER_MIBENCH_TELE
-if ["$CONFIG_USER_MIBENCH_TELE_TELE" = "y"]; then
+if ["$CONFIG_USER_MIBENCH_TELE" = "y"]; then
 	bool 'FFT' CONFIG_USER_MIBENCH_TELE_FFT
 fi
 
-#fi
-endmenu
+bool 'Recursive' CONFIG_USER_MIBENCH_RECURSIVE
 
+endmenu
 
 
 #########################################

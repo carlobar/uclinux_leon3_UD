@@ -1965,6 +1965,15 @@ main(argc, argv)
 {
 /* {{{ vars */
 
+__asm__ ("set	0x00000003, %o0\n\t"
+	 "set	0x00000001, %o1\n\t"
+	 "set	0x80000b00, %o2\n\t"
+	 "st	%o0, [%o2 + 0x08]\n\t"
+	 "st	%o1, [%o2 + 0x04]\n\t");
+
+
+
+
 FILE   *ofp;
 char   filename [80],
        *tcp;
@@ -2117,6 +2126,12 @@ CORNER_LIST corner_list;
 /* }}} */
 
   put_image(argv[2],in,x_size,y_size);
+
+
+__asm__ ("set	0x00000000, %o1\n\t"
+	 "set	0x80000b00, %o2\n\t"
+	 "st	%o1, [%o2 + 0x04]\n\t");
+
 }
 
 /* }}} */

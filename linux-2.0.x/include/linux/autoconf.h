@@ -34,7 +34,7 @@
 #undef  CONFIG_BINFMT_ZFLAT
 #undef  CONFIG_CONSOLE
 #define CONFIG_SPARCNOMMU_SET_DEF_KERNCMD 1
-#define CONFIG_SPARCNOMMU_DEF_KERNCMD "console=/dev/ttyS0,38400 init=/bin/sh"
+#define CONFIG_SPARCNOMMU_DEF_KERNCMD "console=ttyS0,38400"
 /*
  * Floppy, IDE, and other block devices
  */
@@ -76,7 +76,7 @@
 #undef  CONFIG_QUOTA
 #undef  CONFIG_MINIX_FS
 #undef  CONFIG_EXT_FS
-#undef  CONFIG_EXT2_FS
+#define CONFIG_EXT2_FS 1
 #undef  CONFIG_XIA_FS
 #undef  CONFIG_NLS
 #define CONFIG_PROC_FS 1
@@ -91,7 +91,7 @@
 /*
  * Character devices
  */
-#define CONFIG_LEON_SERIAL 1
+#undef  CONFIG_LEON_SERIAL
 /*
  * Kernel hacking
  */

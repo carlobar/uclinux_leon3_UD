@@ -297,6 +297,7 @@ char nfs_root_addrs[NFS_ROOT_ADDRS_LEN] = { "" };
 extern void dquot_init(void);
 
 static char * argv_init[MAX_INIT_ARGS+2] = { "init", NULL, };
+//static char * argv_init[MAX_INIT_ARGS+2] = { "/etc/init.d/rcS", NULL, };
 static char * envp_init[MAX_INIT_ENVS+2] = { "HOME=/", "TERM=linux", NULL, };
 
 static char * argv_rc[] = { "/bin/sh", NULL };
@@ -1269,9 +1270,10 @@ static int init(void * unused)
 	if (!execute_command) {
 	  
 	  printk ("Starting init\n");
-		execve("/etc/init",argv_init,envp_init);
-		execve("/bin/init",argv_init,envp_init);
+		//execve("/etc/init",argv_init,envp_init);
+		//execve("/bin/init",argv_init,envp_init);  
 		execve("/sbin/init",argv_init,envp_init);
+		//execve("/bin/hello");
 #ifdef __sparc__
 		/* Temporary fix */
 		execve("/bin/sh",argv_init,envp_init);
@@ -1290,6 +1292,12 @@ static int init(void * unused)
 	}
 
 	while (1) {
+
+// stop GPIO code
+__asm__ ("set	0x00000000, %o1\n\t"
+	 "set	0x80000b00, %o2\n\t"
+	 "st	%o1, [%o2 + 0x04]\n\t");
+
 		pid = kernel_thread(do_shell,
 			execute_command ? execute_command : "/bin/sh",
 			SIGCHLD);

@@ -1,41 +1,8 @@
 #!/bin/sh
-
-echo "###Start..."
-hostname ethspw
-#mount -t proc proc /proc
-#
-#expand /etc/ramfs.img /dev/ram0
-#mount -t ext2 /dev/ram0 /var
-#
-#mkdir /var/tmp
-#mkdir /var/log
-#mkdir /var/log/boa
-#mkdir /var/dhcpc
-#touch /var/resolv.conf
-#
-#/bin/dhcpcd 
-#
-#/bin/boa -c /home/boa &
-#/bin/ethspw &
-#
-#
-#hostname leon2
-
+hello
+expand /etc/ramfs.img /dev/ram1
 mount -t proc proc /proc
-
-mount -n -t devpts devpts /dev/pts
-
-/sbin/ifconfig lo up 127.0.0.1 netmask 255.0.0.0
-/sbin/ifconfig eth0 up 192.168.0.80
-
-route add 127.0.0.1 dev lo
-route add default dev eth0
-
-route add default gw 192.168.0.1 dev eth0
-
-#/bin/testnet 9999
-
-/bin/portmap -d &
-#mount -o nolock -o ro -t nfs 192.168.0.15:/home /home/nfs
-
+mount -t ext2 /dev/ram1 /var
+echo "###Start..."
+stty erase ^H
 /bin/sh

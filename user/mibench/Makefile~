@@ -16,7 +16,7 @@ dir_$(CONFIG_USER_MIBENCH_AUTO_QSORT)            += automotive/qsort
 dir_$(CONFIG_USER_MIBENCH_AUTO_SUSAN)            += automotive/susan
 
 # telecomunications
-dir_$(CONFIG_USER_MIBENCH_TELE_FFT)            += telecomm/fft
+dir_$(CONFIG_USER_MIBENCH_TELE_FFT)            += telecomm/FFT
 
 
 all:

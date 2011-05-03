@@ -1,0 +1,18 @@
+Coincidencia en el fichero binario images/image-2.0.x.dsu
+Coincidencia en el fichero binario images/rdimage.o
+Coincidencia en el fichero binario images/romfs.img
+Coincidencia en el fichero binario images/image-2.0.x.flash
+Coincidencia en el fichero binario images/image-2.0.x.tsim
+Coincidencia en el fichero binario romfs/bin/stty
+Coincidencia en el fichero binario romfs/bin/mount
+Coincidencia en el fichero binario romfs/bin/kill
+Coincidencia en el fichero binario romfs/bin/busybox
+Coincidencia en el fichero binario romfs/bin/uname
+Coincidencia en el fichero binario romfs/usr/bin/killall
+Coincidencia en el fichero binario romfs/sbin/init
+user/busybox/busybox.c:	error_msg_and_die("applet not found");
+Coincidencia en el fichero binario user/busybox/busybox
+Coincidencia en el fichero binario user/busybox/busybox.gdb
+Coincidencia en el fichero binario user/busybox/busybox.o
+Coincidencia en el fichero binario vendors/gaisler/leon3/piggy.flash
+Coincidencia en el fichero binario vendors/gaisler/leon3/flashbzpiggy

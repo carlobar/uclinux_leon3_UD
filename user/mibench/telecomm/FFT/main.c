@@ -3,6 +3,14 @@
 #include <math.h>
 
 int main(int argc, char *argv[]) {
+
+__asm__ ("set	0x00000003, %o0\n\t"
+	 "set	0x00000001, %o1\n\t"
+	 "set	0x80000b00, %o2\n\t"
+	 "st	%o0, [%o2 + 0x08]\n\t"
+	 "st	%o1, [%o2 + 0x04]\n\t");
+
+
 	unsigned MAXSIZE;
 	unsigned MAXWAVES;
 	unsigned i,j;
@@ -80,6 +88,12 @@ printf("ImagOut:\n");
  free(ImagOut);
  free(coeff);
  free(amp);
+
+
+__asm__ ("set	0x00000000, %o1\n\t"
+	 "set	0x80000b00, %o2\n\t"
+	 "st	%o1, [%o2 + 0x04]\n\t");
+
  exit(0);
 
 
